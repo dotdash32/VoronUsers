@@ -16,8 +16,8 @@ The part is pretty simple, and a near exact copy save for the moved screw hole a
 
 Assembly context: Mounts in the exact same place as the old part.
 
-![in context](images/in-sitio.png)
+![in context](./images/In-sitio.png)
 
 Main differences: new hole location, removed right side rib.  Slight bulge on the side of the part to keep a good thickness clearance around the self-tapped hole.
 
-![just the part](images/isolated.png)
+![just the part](./images/isolated.png)
