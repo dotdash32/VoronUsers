@@ -94,6 +94,7 @@ like so:
 |Derpimus |[V0.1 Block Handle](Derpimus/Block_handle_v0.1) | V0.1 Block Style Handle | :heavy_check_mark: | :x: | :x: | :x: |
 |DorjeDorf | [Duet 3 6HC Din Bracket](./DorjeDorf/Duet_3_6HC_Din_Bracket) | V2.4 Duet 3 6HC Din Bracket | :x: | :x: | :heavy_check_mark: |:x:|
 | |[Duet 3 3HC Din Bracket](./DorjeDorf/Duet_3_3HC_Din_Bracket) |  V2.4 Duet 3 3HC Din Bracket | :x: | :x: | :heavy_check_mark: |:x:|
+| Dotdash32 | [V0 X Endstop Bumper Mod](./Dotash32/V0_X_Endstop_Bumper) | X Endstop Bumper with access to XY Joint screw underneath | :heavy_check_mark: | :x: | :x: | :x: | :x: |
 |doubletrouble |[V0 Skirt Mod](./doubletrouble/V0_Skirt_Mod) |V0 Skirt Mod |:heavy_check_mark: |:x: |:x: |:x:|
 |DrGhetto|[Ghetto Panels](./DrGhetto/GhettoPanels)|Printed panels for the Voron Zero|:heavy_check_mark:|:x:|:x:|:x:|
 |eddie |[V1.8 12mm Z Mod](./eddie/V1.8_12mm_Z_Mod) |Add V1.8 option for 12mm Z rods |:x: |:heavy_check_mark: |:x: |:x:|
