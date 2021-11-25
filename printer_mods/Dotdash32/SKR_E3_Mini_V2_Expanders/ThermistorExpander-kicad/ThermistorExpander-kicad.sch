@@ -1,0 +1,202 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_02x03_Counter_Clockwise J1
+U 1 1 61A0A579
+P 2250 2050
+F 0 "J1" H 2300 2367 50  0000 C CNN
+F 1 "Conn_02x03_Counter_Clockwise" H 2300 2276 50  0000 C CNN
+F 2 "" H 2250 2050 50  0001 C CNN
+F 3 "~" H 2250 2050 50  0001 C CNN
+	1    2250 2050
+	1    0    0    -1  
+$EndComp
+Text Notes 2050 2500 0    50   ~ 0
+MISO |   +5V\nSCK  | MOSI\nRST  |   GND
+$Comp
+L power:+5V #PWR01
+U 1 1 61A0BF14
+P 2950 1650
+F 0 "#PWR01" H 2950 1500 50  0001 C CNN
+F 1 "+5V" H 2965 1823 50  0000 C CNN
+F 2 "" H 2950 1650 50  0001 C CNN
+F 3 "" H 2950 1650 50  0001 C CNN
+	1    2950 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 61A0D489
+P 2950 2300
+F 0 "#PWR02" H 2950 2050 50  0001 C CNN
+F 1 "GND" H 2955 2127 50  0000 C CNN
+F 2 "" H 2950 2300 50  0001 C CNN
+F 3 "" H 2950 2300 50  0001 C CNN
+	1    2950 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 2150 2950 2150
+Wire Wire Line
+	2950 2150 2950 2300
+Wire Wire Line
+	2950 1650 2950 1950
+Wire Wire Line
+	2950 1950 2550 1950
+Wire Wire Line
+	2050 1950 1900 1950
+Wire Wire Line
+	2050 2050 1900 2050
+Wire Wire Line
+	2550 2050 2700 2050
+Text Label 1900 2050 0    50   ~ 0
+TH2
+Text Label 2700 2050 2    50   ~ 0
+TH4
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 61A0FD6D
+P 4750 1600
+F 0 "J2" H 4830 1592 50  0000 L CNN
+F 1 "Conn_01x02" H 4830 1501 50  0000 L CNN
+F 2 "" H 4750 1600 50  0001 C CNN
+F 3 "~" H 4750 1600 50  0001 C CNN
+	1    4750 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 61A1120B
+P 4750 2000
+F 0 "J3" H 4830 1992 50  0000 L CNN
+F 1 "Conn_01x02" H 4830 1901 50  0000 L CNN
+F 2 "" H 4750 2000 50  0001 C CNN
+F 3 "~" H 4750 2000 50  0001 C CNN
+	1    4750 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J4
+U 1 1 61A11821
+P 4750 2400
+F 0 "J4" H 4830 2392 50  0000 L CNN
+F 1 "Conn_01x02" H 4830 2301 50  0000 L CNN
+F 2 "" H 4750 2400 50  0001 C CNN
+F 3 "~" H 4750 2400 50  0001 C CNN
+	1    4750 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L ME218_BaseLib:Cap C1
+U 1 1 61A1232B
+P 4000 1750
+F 0 "C1" H 4115 1796 50  0000 L CNN
+F 1 "10uF" H 4115 1705 50  0000 L CNN
+F 2 "" H 4038 1600 50  0001 C CNN
+F 3 "" H 4000 1750 50  0001 C CNN
+	1    4000 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L ME218_BaseLib:Cap C2
+U 1 1 61A1355C
+P 4100 2150
+F 0 "C2" H 4215 2196 50  0000 L CNN
+F 1 "10uF" H 4215 2105 50  0000 L CNN
+F 2 "" H 4138 2000 50  0001 C CNN
+F 3 "" H 4100 2150 50  0001 C CNN
+	1    4100 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L ME218_BaseLib:Cap C3
+U 1 1 61A14AC7
+P 4200 2550
+F 0 "C3" H 4315 2596 50  0000 L CNN
+F 1 "10uF" H 4315 2505 50  0000 L CNN
+F 2 "" H 4238 2400 50  0001 C CNN
+F 3 "" H 4200 2550 50  0001 C CNN
+	1    4200 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 2700 4100 2700
+Wire Wire Line
+	4000 1900 4000 2700
+Wire Wire Line
+	4100 2300 4100 2700
+Connection ~ 4100 2700
+Wire Wire Line
+	4100 2700 4200 2700
+Wire Wire Line
+	4000 1600 4550 1600
+Wire Wire Line
+	4100 2000 4550 2000
+Wire Wire Line
+	4200 2400 4550 2400
+Wire Wire Line
+	4550 1700 4500 1700
+Wire Wire Line
+	4500 1700 4500 2100
+Wire Wire Line
+	4500 2700 4300 2700
+Connection ~ 4200 2700
+Wire Wire Line
+	4550 2100 4500 2100
+Connection ~ 4500 2100
+Wire Wire Line
+	4500 2100 4500 2500
+Wire Wire Line
+	4550 2500 4500 2500
+Connection ~ 4500 2500
+Wire Wire Line
+	4500 2500 4500 2700
+$Comp
+L power:GND #PWR03
+U 1 1 61A1C70A
+P 4300 2800
+F 0 "#PWR03" H 4300 2550 50  0001 C CNN
+F 1 "GND" H 4305 2627 50  0000 C CNN
+F 2 "" H 4300 2800 50  0001 C CNN
+F 3 "" H 4300 2800 50  0001 C CNN
+	1    4300 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 2800 4300 2700
+Connection ~ 4300 2700
+Wire Wire Line
+	4300 2700 4200 2700
+Wire Wire Line
+	4000 1600 3700 1600
+Connection ~ 4000 1600
+Wire Wire Line
+	4100 2000 3700 2000
+Connection ~ 4100 2000
+Wire Wire Line
+	4200 2400 3700 2400
+Connection ~ 4200 2400
+Text Label 3700 1600 0    50   ~ 0
+TH2
+Text Label 3700 2000 0    50   ~ 0
+TH3
+Text Label 3700 2400 0    50   ~ 0
+TH4
+Text Notes 2100 2800 0    50   ~ 0
+PA6 | +5V\nPA5 | PA7\nXXX | GND
+Text Label 1900 1950 0    50   ~ 0
+TH3
+$EndSCHEMATC
