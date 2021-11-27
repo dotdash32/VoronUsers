@@ -64,9 +64,9 @@ Wire Wire Line
 	1450 1700 1450 2000
 Connection ~ 1450 2000
 Text Label 900  1600 0    50   ~ 0
-FAN2
-Text Label 900  1800 0    50   ~ 0
 FAN3
+Text Label 900  1800 0    50   ~ 0
+FAN2
 $Comp
 L Connector_Generic:Conn_01x02 J3
 U 1 1 61A34714
