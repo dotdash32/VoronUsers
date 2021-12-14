@@ -13,9 +13,9 @@ While not a fashionable dress, it leaves the rear of the machine open to air, gr
 
 ![front CAD view](images/Front_CAD.png)
 
-Two little lips keep the bottom of the panel well aligned, and two self-tapping M3 holes securely join the pieces together.  Because of this cut, both pieces fit on a V0 buildplate at the same time (~1:30 hr print time) and screw together simply.
+Two little lips keep the bottom of the panel well aligned, and two self-tapping M3 holes securely join the pieces together.  Because of this cut, both pieces fit on a V0 build plate at the same time (~1:30 hr print time) and screw together simply.
 
-Since most panels come as a set, the lip that extends down past the motor panel scales with the inputted thickness, rather than aligning to the bottoms of the panel clips.  This should give just a little more access to the cable chain to the hotend, or umbillical PCB if you're using it.
+Since most panels come as a set, the lip that extends down past the motor panel scales with the inputted thickness, rather than aligning to the bottoms of the panel clips.  This should give just a little more access to the cable chain to the hot end, or umbilical PCB if you're using it.
 
 ## Materials
 
