@@ -162,7 +162,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model ${KISYS3DMOD}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_2x03_P2.54mm_Vertical.wrl
+    (model ${KISYS3DMOD}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_2x03_P2.54mm_Vertical.step
       (offset (xyz 0 0 -1.6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
@@ -255,7 +255,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model ${KISYS3DMOD}/Connector_JST.3dshapes/JST_XH_S02B-XH-A-1_1x02_P2.50mm_Horizontal.wrl
+    (model ${KISYS3DMOD}/Connector_JST.3dshapes/JST_XH_S02B-XH-A-1_1x02_P2.50mm_Horizontal.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -317,7 +317,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model ${KISYS3DMOD}/Connector_JST.3dshapes/JST_XH_S02B-XH-A-1_1x02_P2.50mm_Horizontal.wrl
+    (model ${KISYS3DMOD}/Connector_JST.3dshapes/JST_XH_S02B-XH-A-1_1x02_P2.50mm_Horizontal.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -379,7 +379,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model ${KISYS3DMOD}/Connector_JST.3dshapes/JST_XH_S02B-XH-A-1_1x02_P2.50mm_Horizontal.wrl
+    (model ${KISYS3DMOD}/Connector_JST.3dshapes/JST_XH_S02B-XH-A-1_1x02_P2.50mm_Horizontal.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -420,7 +420,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0805_2012Metric.wrl
+    (model ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -461,7 +461,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0805_2012Metric.wrl
+    (model ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -502,7 +502,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0805_2012Metric.wrl
+    (model ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
