@@ -620,7 +620,7 @@ U 1 1 6239146B
 P 2600 2000
 F 0 "JP2" H 2600 2205 50  0000 C CNN
 F 1 "LED_ENABLE" H 2600 2114 50  0000 C CNN
-F 2 "" H 2600 2000 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 2600 2000 50  0001 C CNN
 F 3 "~" H 2600 2000 50  0001 C CNN
 	1    2600 2000
 	1    0    0    -1  
@@ -799,21 +799,21 @@ Wire Notes Line
 Wire Notes Line
 	3500 500  3500 2450
 $Comp
-L Connector_Generic:Conn_02x04_Odd_Even J?
+L Connector_Generic:Conn_02x04_Odd_Even J2
 U 1 1 62877243
 P 4350 1100
-F 0 "J?" H 4400 1417 50  0000 C CNN
+F 0 "J2" H 4400 1417 50  0000 C CNN
 F 1 "IO_PassThrough" H 4400 1326 50  0000 C CNN
-F 2 "" H 4350 1100 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x04_Pitch2.54mm" H 4350 1100 50  0001 C CNN
 F 3 "~" H 4350 1100 50  0001 C CNN
 	1    4350 1100
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR01
 U 1 1 6287A03B
 P 4050 1400
-F 0 "#PWR?" H 4050 1150 50  0001 C CNN
+F 0 "#PWR01" H 4050 1150 50  0001 C CNN
 F 1 "GND" H 4055 1227 50  0000 C CNN
 F 2 "" H 4050 1400 50  0001 C CNN
 F 3 "" H 4050 1400 50  0001 C CNN

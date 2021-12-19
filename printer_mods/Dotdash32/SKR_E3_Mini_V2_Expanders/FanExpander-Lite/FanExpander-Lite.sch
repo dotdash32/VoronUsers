@@ -4,9 +4,9 @@ EELAYER END
 $Descr A 11000 8500
 encoding utf-8
 Sheet 1 1
-Title "SKR E3 Mini Fan Expander"
-Date "2021-12-17"
-Rev "V0.1.0"
+Title "SKR E3 Mini Fan Expander Lite"
+Date "2021-12-18"
+Rev "V0.1.1"
 Comp "Voron Design"
 Comment1 "Drawn by Dotdash32 (JDeW)"
 Comment2 ""
@@ -17,15 +17,15 @@ Text Notes 800  800  0    150  ~ 30
 Inputs
 Wire Wire Line
 	550  1450 850  1450
-Text Label 550  1450 0    50   ~ 0
+Text Label 1650 1750 2    50   ~ 0
 FAN2
 Wire Wire Line
 	850  1550 550  1550
 Wire Wire Line
 	850  1650 550  1650
-Text Label 550  1550 0    50   ~ 0
+Text Label 1650 1650 2    50   ~ 0
 FAN3
-Text Label 550  1650 0    50   ~ 0
+Text Label 1650 1450 2    50   ~ 0
 FAN4
 $Comp
 L power:+5V #PWR0101
@@ -760,13 +760,13 @@ Wire Wire Line
 	1350 1650 1650 1650
 Wire Wire Line
 	1350 1750 1650 1750
-Text Label 550  1750 0    50   ~ 0
+Text Label 550  1450 0    50   ~ 0
 PASS0
-Text Label 1650 1450 2    50   ~ 0
+Text Label 550  1550 0    50   ~ 0
 PASS1
-Text Label 1650 1650 2    50   ~ 0
+Text Label 550  1650 0    50   ~ 0
 PASS2
-Text Label 1650 1750 2    50   ~ 0
+Text Label 550  1750 0    50   ~ 0
 PASS3
 Text Notes 2100 700  0    100  ~ 0
 Fuses
