@@ -1,0 +1,864 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "SKR E3 Mini Fan Expander"
+Date "2021-12-17"
+Rev "V0.1.0"
+Comp "Voron Design"
+Comment1 "Drawn by Dotdash32 (JDeW)"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 800  800  0    150  ~ 30
+Inputs
+Wire Wire Line
+	550  1450 850  1450
+Text Label 550  1450 0    50   ~ 0
+FAN2
+Wire Wire Line
+	850  1550 550  1550
+Wire Wire Line
+	850  1650 550  1650
+Text Label 550  1550 0    50   ~ 0
+FAN3
+Text Label 550  1650 0    50   ~ 0
+FAN4
+$Comp
+L power:+5V #PWR0101
+U 1 1 61C09375
+P 3300 1150
+F 0 "#PWR0101" H 3300 1000 50  0001 C CNN
+F 1 "+5V" H 3315 1323 50  0000 C CNN
+F 2 "" H 3300 1150 50  0001 C CNN
+F 3 "" H 3300 1150 50  0001 C CNN
+	1    3300 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 61C0A549
+P 650 1850
+F 0 "#PWR0102" H 650 1600 50  0001 C CNN
+F 1 "GND" H 655 1677 50  0000 C CNN
+F 2 "" H 650 1850 50  0001 C CNN
+F 3 "" H 650 1850 50  0001 C CNN
+	1    650  1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 61C0DEDC
+P 800 3400
+F 0 "J1" H 718 3075 50  0000 C CNN
+F 1 "FAN1_IN" H 718 3166 50  0000 C CNN
+F 2 "Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight" H 800 3400 50  0001 C CNN
+F 3 "~" H 800 3400 50  0001 C CNN
+	1    800  3400
+	-1   0    0    1   
+$EndComp
+Text Notes 550  1150 0    100  ~ 0
+EXP from SKR
+$Comp
+L power:+24V #PWR0103
+U 1 1 61C19F25
+P 3300 800
+F 0 "#PWR0103" H 3300 650 50  0001 C CNN
+F 1 "+24V" H 3315 973 50  0000 C CNN
+F 2 "" H 3300 800 50  0001 C CNN
+F 3 "" H 3300 800 50  0001 C CNN
+	1    3300 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 3400 1550 3400
+Wire Wire Line
+	1000 3300 1550 3300
+Wire Wire Line
+	1350 1850 1850 1850
+$Comp
+L Device:Polyfuse F1
+U 1 1 61C26288
+P 2900 900
+F 0 "F1" V 3100 850 50  0000 L CNN
+F 1 "Polyfuse-2A" V 3000 650 50  0000 L CNN
+F 2 "Fuse_Holders_and_Fuses:Fuse_SMD1206_HandSoldering" H 2950 700 50  0001 L CNN
+F 3 "~" H 2900 900 50  0001 C CNN
+	1    2900 900 
+	0    -1   -1   0   
+$EndComp
+Wire Notes Line width 12 style solid
+	500  3550 2000 3550
+$Comp
+L Connector_Generic:Conn_01x02 J9
+U 1 1 61C7EF42
+P 7350 1400
+F 0 "J9" H 7430 1392 50  0000 L CNN
+F 1 "FAN1" H 7430 1301 50  0000 L CNN
+F 2 "Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight" H 7350 1400 50  0001 C CNN
+F 3 "~" H 7350 1400 50  0001 C CNN
+	1    7350 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:Jumper_3_Open J6
+U 1 1 61C814B1
+P 6800 1250
+F 0 "J6" H 6850 1450 50  0000 R CNN
+F 1 "V_SELECT1" H 7000 1350 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 6800 1250 50  0001 C CNN
+F 3 "~" H 6800 1250 50  0001 C CNN
+	1    6800 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR08
+U 1 1 61C8393E
+P 6450 1200
+F 0 "#PWR08" H 6450 1050 50  0001 C CNN
+F 1 "+5V" H 6465 1373 50  0000 C CNN
+F 2 "" H 6450 1200 50  0001 C CNN
+F 3 "" H 6450 1200 50  0001 C CNN
+	1    6450 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR011
+U 1 1 61C84CF3
+P 7150 1200
+F 0 "#PWR011" H 7150 1050 50  0001 C CNN
+F 1 "+24V" H 7165 1373 50  0000 C CNN
+F 2 "" H 7150 1200 50  0001 C CNN
+F 3 "" H 7150 1200 50  0001 C CNN
+	1    7150 1200
+	1    0    0    -1  
+$EndComp
+Text Label 1550 3300 2    50   ~ 0
+FAN1_Drive
+$Comp
+L Device:R_US R2
+U 1 1 61C92F81
+P 6100 1500
+F 0 "R2" V 6305 1500 50  0000 C CNN
+F 1 "560R" V 6214 1500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 6140 1490 50  0001 C CNN
+F 3 "~" H 6100 1500 50  0001 C CNN
+	1    6100 1500
+	-1   0    0    1   
+$EndComp
+Text Label 6550 1650 0    50   ~ 0
+FAN1_Drive
+Wire Notes Line width 12 style solid
+	2000 3550 2000 500 
+Text Notes 5550 1100 0    100  ~ 0
+FAN1
+$Comp
+L Device:Q_NMOS_GSD Q1
+U 1 1 61CE7B49
+P 9450 1950
+F 0 "Q1" H 9656 1996 50  0000 L CNN
+F 1 "IRLML6344" H 9656 1905 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 9650 2050 50  0001 C CNN
+F 3 "~" H 9450 1950 50  0001 C CNN
+	1    9450 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J10
+U 1 1 61CF5CB7
+P 9900 1400
+F 0 "J10" H 9980 1392 50  0000 L CNN
+F 1 "FAN2" H 9980 1301 50  0000 L CNN
+F 2 "Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight" H 9900 1400 50  0001 C CNN
+F 3 "~" H 9900 1400 50  0001 C CNN
+	1    9900 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:Jumper_3_Open J7
+U 1 1 61CF5CBD
+P 9350 1250
+F 0 "J7" H 9400 1450 50  0000 R CNN
+F 1 "V_SELECT2" H 9550 1350 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 9350 1250 50  0001 C CNN
+F 3 "~" H 9350 1250 50  0001 C CNN
+	1    9350 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR09
+U 1 1 61CF5CC3
+P 9000 1200
+F 0 "#PWR09" H 9000 1050 50  0001 C CNN
+F 1 "+5V" H 9015 1373 50  0000 C CNN
+F 2 "" H 9000 1200 50  0001 C CNN
+F 3 "" H 9000 1200 50  0001 C CNN
+	1    9000 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR012
+U 1 1 61CF5CC9
+P 9700 1200
+F 0 "#PWR012" H 9700 1050 50  0001 C CNN
+F 1 "+24V" H 9715 1373 50  0000 C CNN
+F 2 "" H 9700 1200 50  0001 C CNN
+F 3 "" H 9700 1200 50  0001 C CNN
+	1    9700 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R3
+U 1 1 61CF5CD5
+P 8700 1450
+F 0 "R3" V 8905 1450 50  0000 C CNN
+F 1 "560R" V 8814 1450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 8740 1440 50  0001 C CNN
+F 3 "~" H 8700 1450 50  0001 C CNN
+	1    8700 1450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D4
+U 1 1 61CF5CDB
+P 8900 1600
+F 0 "D4" V 8939 1483 50  0000 R CNN
+F 1 "LED" V 8848 1483 50  0000 R CNN
+F 2 "LEDs:LED_0603_HandSoldering" H 8900 1600 50  0001 C CNN
+F 3 "~" H 8900 1600 50  0001 C CNN
+	1    8900 1600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9700 1500 9550 1500
+Wire Wire Line
+	9550 1500 9550 1600
+Wire Wire Line
+	8750 1600 8700 1600
+Wire Wire Line
+	9050 1600 9550 1600
+Connection ~ 9550 1600
+$Comp
+L Device:R_US R6
+U 1 1 61D23E6E
+P 9000 1950
+F 0 "R6" V 8795 1950 50  0000 C CNN
+F 1 "100R" V 8886 1950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 9040 1940 50  0001 C CNN
+F 3 "~" H 9000 1950 50  0001 C CNN
+	1    9000 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 61D28D11
+P 9550 2300
+F 0 "#PWR010" H 9550 2050 50  0001 C CNN
+F 1 "GND" H 9555 2127 50  0000 C CNN
+F 2 "" H 9550 2300 50  0001 C CNN
+F 3 "" H 9550 2300 50  0001 C CNN
+	1    9550 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 1950 9250 1950
+Text Label 8450 1950 0    50   ~ 0
+FAN2
+Wire Wire Line
+	9550 1600 9550 1750
+$Comp
+L Device:LED D3
+U 1 1 61C95144
+P 6350 1650
+F 0 "D3" V 6389 1533 50  0000 R CNN
+F 1 "LED" V 6298 1533 50  0000 R CNN
+F 2 "LEDs:LED_0603_HandSoldering" H 6350 1650 50  0001 C CNN
+F 3 "~" H 6350 1650 50  0001 C CNN
+	1    6350 1650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6100 1650 6200 1650
+Text Label 9100 1600 0    50   ~ 0
+FAN2_Drive
+Text Notes 7200 800  0    150  ~ 30
+Fan Outputs
+Text Notes 8050 1100 0    100  ~ 0
+Fan2
+Wire Notes Line width 12 style solid
+	5500 500  5500 4300
+$Comp
+L Device:Q_NMOS_GSD Q2
+U 1 1 61DAD54D
+P 7000 3650
+F 0 "Q2" H 7206 3696 50  0000 L CNN
+F 1 "IRLML6344" H 7206 3605 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 7200 3750 50  0001 C CNN
+F 3 "~" H 7000 3650 50  0001 C CNN
+	1    7000 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J13
+U 1 1 61DAD553
+P 7450 3100
+F 0 "J13" H 7530 3092 50  0000 L CNN
+F 1 "FAN3" H 7530 3001 50  0000 L CNN
+F 2 "Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight" H 7450 3100 50  0001 C CNN
+F 3 "~" H 7450 3100 50  0001 C CNN
+	1    7450 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:Jumper_3_Open J11
+U 1 1 61DAD559
+P 6900 2950
+F 0 "J11" H 6950 3150 50  0000 R CNN
+F 1 "V_SELECT3" H 7100 3050 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 6900 2950 50  0001 C CNN
+F 3 "~" H 6900 2950 50  0001 C CNN
+	1    6900 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR013
+U 1 1 61DAD55F
+P 6550 2900
+F 0 "#PWR013" H 6550 2750 50  0001 C CNN
+F 1 "+5V" H 6565 3073 50  0000 C CNN
+F 2 "" H 6550 2900 50  0001 C CNN
+F 3 "" H 6550 2900 50  0001 C CNN
+	1    6550 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR017
+U 1 1 61DAD565
+P 7250 2900
+F 0 "#PWR017" H 7250 2750 50  0001 C CNN
+F 1 "+24V" H 7265 3073 50  0000 C CNN
+F 2 "" H 7250 2900 50  0001 C CNN
+F 3 "" H 7250 2900 50  0001 C CNN
+	1    7250 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D5
+U 1 1 61DAD575
+P 6450 3300
+F 0 "D5" V 6489 3183 50  0000 R CNN
+F 1 "LED" V 6398 3183 50  0000 R CNN
+F 2 "LEDs:LED_0603_HandSoldering" H 6450 3300 50  0001 C CNN
+F 3 "~" H 6450 3300 50  0001 C CNN
+	1    6450 3300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7250 3200 7100 3200
+Wire Wire Line
+	7100 3200 7100 3300
+Wire Wire Line
+	6600 3300 7100 3300
+Connection ~ 7100 3300
+$Comp
+L Device:R_US R11
+U 1 1 61DAD584
+P 6550 3650
+F 0 "R11" V 6345 3650 50  0000 C CNN
+F 1 "100R" V 6436 3650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 6590 3640 50  0001 C CNN
+F 3 "~" H 6550 3650 50  0001 C CNN
+	1    6550 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R9
+U 1 1 61DAD58A
+P 6550 3950
+F 0 "R9" V 6345 3950 50  0000 C CNN
+F 1 "100k" V 6436 3950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 6590 3940 50  0001 C CNN
+F 3 "~" H 6550 3950 50  0001 C CNN
+	1    6550 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR015
+U 1 1 61DAD590
+P 7100 4000
+F 0 "#PWR015" H 7100 3750 50  0001 C CNN
+F 1 "GND" H 7105 3827 50  0000 C CNN
+F 2 "" H 7100 4000 50  0001 C CNN
+F 3 "" H 7100 4000 50  0001 C CNN
+	1    7100 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 3650 6800 3650
+Wire Wire Line
+	6400 3650 6350 3650
+Wire Wire Line
+	6350 3650 6000 3650
+Connection ~ 6350 3650
+Text Label 6000 3650 0    50   ~ 0
+FAN3
+Wire Wire Line
+	7100 3300 7100 3450
+Text Label 6650 3300 0    50   ~ 0
+FAN3_Drive
+Text Notes 5600 2800 0    100  ~ 0
+Fan3
+Wire Notes Line
+	500  2650 2000 2650
+$Comp
+L Device:Q_NMOS_GSD Q3
+U 1 1 61DF6C65
+P 9500 3650
+F 0 "Q3" H 9706 3696 50  0000 L CNN
+F 1 "IRLML6344" H 9706 3605 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 9700 3750 50  0001 C CNN
+F 3 "~" H 9500 3650 50  0001 C CNN
+	1    9500 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J14
+U 1 1 61DF6C6B
+P 9950 3100
+F 0 "J14" H 10030 3092 50  0000 L CNN
+F 1 "FAN4" H 10030 3001 50  0000 L CNN
+F 2 "Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight" H 9950 3100 50  0001 C CNN
+F 3 "~" H 9950 3100 50  0001 C CNN
+	1    9950 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:Jumper_3_Open J12
+U 1 1 61DF6C71
+P 9400 2950
+F 0 "J12" H 9450 3150 50  0000 R CNN
+F 1 "V_SELECT4" H 9600 3050 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 9400 2950 50  0001 C CNN
+F 3 "~" H 9400 2950 50  0001 C CNN
+	1    9400 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR014
+U 1 1 61DF6C77
+P 9050 2900
+F 0 "#PWR014" H 9050 2750 50  0001 C CNN
+F 1 "+5V" H 9065 3073 50  0000 C CNN
+F 2 "" H 9050 2900 50  0001 C CNN
+F 3 "" H 9050 2900 50  0001 C CNN
+	1    9050 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR018
+U 1 1 61DF6C7D
+P 9750 2900
+F 0 "#PWR018" H 9750 2750 50  0001 C CNN
+F 1 "+24V" H 9765 3073 50  0000 C CNN
+F 2 "" H 9750 2900 50  0001 C CNN
+F 3 "" H 9750 2900 50  0001 C CNN
+	1    9750 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R8
+U 1 1 61DF6C87
+P 8750 3150
+F 0 "R8" V 8955 3150 50  0000 C CNN
+F 1 "560R" V 8864 3150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 8790 3140 50  0001 C CNN
+F 3 "~" H 8750 3150 50  0001 C CNN
+	1    8750 3150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D6
+U 1 1 61DF6C8D
+P 8950 3300
+F 0 "D6" V 8989 3183 50  0000 R CNN
+F 1 "LED" V 8898 3183 50  0000 R CNN
+F 2 "LEDs:LED_0603_HandSoldering" H 8950 3300 50  0001 C CNN
+F 3 "~" H 8950 3300 50  0001 C CNN
+	1    8950 3300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9750 3200 9600 3200
+Wire Wire Line
+	9600 3200 9600 3300
+Wire Wire Line
+	8800 3300 8750 3300
+Wire Wire Line
+	9100 3300 9600 3300
+Connection ~ 9600 3300
+$Comp
+L Device:R_US R12
+U 1 1 61DF6C9C
+P 9050 3650
+F 0 "R12" V 8845 3650 50  0000 C CNN
+F 1 "100R" V 8936 3650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 9090 3640 50  0001 C CNN
+F 3 "~" H 9050 3650 50  0001 C CNN
+	1    9050 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R10
+U 1 1 61DF6CA2
+P 9050 3950
+F 0 "R10" V 8845 3950 50  0000 C CNN
+F 1 "100k" V 8936 3950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 9090 3940 50  0001 C CNN
+F 3 "~" H 9050 3950 50  0001 C CNN
+	1    9050 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR016
+U 1 1 61DF6CA8
+P 9600 4000
+F 0 "#PWR016" H 9600 3750 50  0001 C CNN
+F 1 "GND" H 9605 3827 50  0000 C CNN
+F 2 "" H 9600 4000 50  0001 C CNN
+F 3 "" H 9600 4000 50  0001 C CNN
+	1    9600 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 3650 9300 3650
+Wire Wire Line
+	8900 3650 8850 3650
+Wire Wire Line
+	8850 3650 8500 3650
+Connection ~ 8850 3650
+Text Label 8500 3650 0    50   ~ 0
+FAN4
+Wire Wire Line
+	9600 3300 9600 3450
+Text Label 9150 3300 0    50   ~ 0
+FAN4_Drive
+Text Notes 8100 2800 0    100  ~ 0
+Fan4
+Wire Notes Line
+	8000 900  8000 4300
+Wire Notes Line
+	5500 2600 10500 2600
+Text Notes 600  3000 0    100  ~ 0
+FAN1\nfrom SKR
+Wire Notes Line style dotted
+	5500 900  10500 900 
+Text Label 7000 1400 0    50   ~ 0
+F1V
+Text Label 9550 1400 0    50   ~ 0
+F2V
+Text Label 7100 3100 0    50   ~ 0
+F3V
+Text Label 9600 3100 0    50   ~ 0
+F4V
+Text Label 1550 3400 2    50   ~ 0
+24V_unFused
+Text Label 1850 1850 2    50   ~ 0
+5V_unFused
+Wire Wire Line
+	650  1850 850  1850
+$Comp
+L Device:Polyfuse F3
+U 1 1 61C255C6
+P 2900 1250
+F 0 "F3" V 2700 1200 50  0000 L CNN
+F 1 "Polyfuse-1A" V 2800 1000 50  0000 L CNN
+F 2 "Fuse_Holders_and_Fuses:Fuse_SMD1206_HandSoldering" H 2950 1050 50  0001 L CNN
+F 3 "~" H 2900 1250 50  0001 C CNN
+	1    2900 1250
+	0    1    1    0   
+$EndComp
+Text Notes 650  2600 0    50   ~ 0
+SKR Mini E3 V2 EXP1\nPB5       | PA15\nTX1/PA9  | RST\nRX1/PA10 | PB9\nPB8       | PB15\nGND       | +5V
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J3
+U 1 1 61BFB492
+P 1050 1650
+F 0 "J3" H 1100 2067 50  0000 C CNN
+F 1 "EXP1_IN" H 1100 1976 50  0000 C CNN
+F 2 "Connectors_Multicomp:Multicomp_MC9A12-1034_2x05x2.54mm_Straight" H 1050 1650 50  0001 C CNN
+F 3 "~" H 1050 1650 50  0001 C CNN
+	1    1050 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 1400 9700 1400
+Wire Wire Line
+	9000 1200 9000 1250
+Wire Wire Line
+	9000 1250 9100 1250
+Wire Wire Line
+	9600 1250 9700 1250
+Wire Wire Line
+	9700 1250 9700 1200
+$Comp
+L power:+5V #PWR0104
+U 1 1 6238FE82
+P 2250 1900
+F 0 "#PWR0104" H 2250 1750 50  0001 C CNN
+F 1 "+5V" H 2265 2073 50  0000 C CNN
+F 2 "" H 2250 1900 50  0001 C CNN
+F 3 "" H 2250 1900 50  0001 C CNN
+	1    2250 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Bridged JP2
+U 1 1 6239146B
+P 2600 2000
+F 0 "JP2" H 2600 2205 50  0000 C CNN
+F 1 "LED_ENABLE" H 2600 2114 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 2600 2000 50  0001 C CNN
+F 3 "~" H 2600 2000 50  0001 C CNN
+	1    2600 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 2000 2250 2000
+Wire Wire Line
+	2250 2000 2250 1900
+Wire Wire Line
+	2750 2000 3150 2000
+Text Label 3150 2000 2    50   ~ 0
+LED_Drive
+Wire Wire Line
+	8700 1300 8300 1300
+Text Label 8300 1300 0    50   ~ 0
+LED_Drive
+Wire Wire Line
+	8450 1950 8800 1950
+$Comp
+L Device:R_US R5
+U 1 1 61D251AF
+P 9000 2250
+F 0 "R5" V 9200 2200 50  0000 L CNN
+F 1 "100k" V 9100 2150 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 9040 2240 50  0001 C CNN
+F 3 "~" H 9000 2250 50  0001 C CNN
+	1    9000 2250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9550 2150 9550 2250
+Wire Wire Line
+	8850 2250 8800 2250
+Wire Wire Line
+	8800 2250 8800 1950
+Connection ~ 8800 1950
+Wire Wire Line
+	8800 1950 8850 1950
+Wire Wire Line
+	9150 2250 9550 2250
+Connection ~ 9550 2250
+Wire Wire Line
+	9550 2250 9550 2300
+Wire Wire Line
+	6550 2900 6550 2950
+Wire Wire Line
+	6550 2950 6650 2950
+Wire Wire Line
+	7150 2950 7250 2950
+Wire Wire Line
+	7250 2950 7250 2900
+Wire Wire Line
+	6900 3100 7250 3100
+Wire Wire Line
+	6300 3300 6250 3300
+$Comp
+L Device:R_US R7
+U 1 1 61DAD56F
+P 6250 3150
+F 0 "R7" V 6455 3150 50  0000 C CNN
+F 1 "560R" V 6364 3150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 6290 3140 50  0001 C CNN
+F 3 "~" H 6250 3150 50  0001 C CNN
+	1    6250 3150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6250 3000 5850 3000
+Text Label 5850 3000 0    50   ~ 0
+LED_Drive
+Wire Wire Line
+	7100 3850 7100 3950
+Wire Wire Line
+	6400 3950 6350 3950
+Wire Wire Line
+	6350 3650 6350 3950
+Wire Wire Line
+	6700 3950 7100 3950
+Connection ~ 7100 3950
+Wire Wire Line
+	7100 3950 7100 4000
+Wire Wire Line
+	9400 3100 9750 3100
+Text Label 8350 3000 0    50   ~ 0
+LED_Drive
+Wire Wire Line
+	8350 3000 8750 3000
+Wire Wire Line
+	9150 2950 9050 2950
+Wire Wire Line
+	9050 2950 9050 2900
+Wire Wire Line
+	9650 2950 9750 2950
+Wire Wire Line
+	9750 2950 9750 2900
+Wire Wire Line
+	9600 3850 9600 3950
+Wire Wire Line
+	8900 3950 8850 3950
+Wire Wire Line
+	8850 3650 8850 3950
+Wire Wire Line
+	9200 3950 9600 3950
+Connection ~ 9600 3950
+Wire Wire Line
+	9600 3950 9600 4000
+Wire Wire Line
+	6800 1400 7150 1400
+Wire Wire Line
+	6450 1200 6450 1250
+Wire Wire Line
+	6450 1250 6550 1250
+Wire Wire Line
+	7050 1250 7150 1250
+Wire Wire Line
+	7150 1250 7150 1200
+Wire Wire Line
+	7150 1500 7000 1500
+Wire Wire Line
+	7000 1500 7000 1650
+Wire Wire Line
+	7000 1650 6500 1650
+Text Label 5700 1350 0    50   ~ 0
+LED_Drive
+Wire Wire Line
+	5700 1350 6100 1350
+Text Notes 5750 2350 0    50   ~ 0
+FAN1 is a pass through fan.\nIt is included for a simple +12/24V reference,\nand to select drive voltage.\n\nNo control is done to this fan!
+Wire Notes Line width 12 style solid
+	5500 4300 10500 4300
+Wire Wire Line
+	1650 1450 1350 1450
+NoConn ~ 1350 1550
+Wire Wire Line
+	850  1750 550  1750
+Wire Wire Line
+	1350 1650 1650 1650
+Wire Wire Line
+	1350 1750 1650 1750
+Text Label 550  1750 0    50   ~ 0
+PASS0
+Text Label 1650 1450 2    50   ~ 0
+PASS1
+Text Label 1650 1650 2    50   ~ 0
+PASS2
+Text Label 1650 1750 2    50   ~ 0
+PASS3
+Text Notes 2100 700  0    100  ~ 0
+Fuses
+Text Label 2200 900  0    50   ~ 0
+24V_unFused
+Wire Wire Line
+	2200 900  2750 900 
+Wire Wire Line
+	3050 900  3300 900 
+Wire Wire Line
+	3300 900  3300 800 
+Wire Wire Line
+	3300 1150 3300 1250
+Wire Wire Line
+	3300 1250 3050 1250
+Wire Wire Line
+	2750 1250 2200 1250
+Text Label 2200 1250 0    50   ~ 0
+5V_unFused
+Wire Notes Line style dotted
+	2000 900  500  900 
+Wire Notes Line
+	2000 1400 3500 1400
+Text Notes 2150 1600 0    100  ~ 0
+LED Enable
+Text Notes 2150 2350 0    50   ~ 0
+Cut this trace to disable LED\nfrom turning on when their\ncorresponding MOSFET turns on.
+Wire Notes Line
+	2000 2450 3500 2450
+Wire Notes Line
+	3500 500  3500 2450
+$Comp
+L Connector_Generic:Conn_02x04_Odd_Even J2
+U 1 1 62877243
+P 4350 1100
+F 0 "J2" H 4400 1417 50  0000 C CNN
+F 1 "IO_PassThrough" H 4400 1326 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x04_Pitch2.54mm" H 4350 1100 50  0001 C CNN
+F 3 "~" H 4350 1100 50  0001 C CNN
+	1    4350 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 6287A03B
+P 4050 1400
+F 0 "#PWR01" H 4050 1150 50  0001 C CNN
+F 1 "GND" H 4055 1227 50  0000 C CNN
+F 2 "" H 4050 1400 50  0001 C CNN
+F 3 "" H 4050 1400 50  0001 C CNN
+	1    4050 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 1400 4050 1300
+Wire Wire Line
+	4050 1000 4150 1000
+Wire Wire Line
+	4150 1100 4050 1100
+Connection ~ 4050 1100
+Wire Wire Line
+	4050 1100 4050 1000
+Wire Wire Line
+	4150 1200 4050 1200
+Connection ~ 4050 1200
+Wire Wire Line
+	4050 1200 4050 1100
+Wire Wire Line
+	4150 1300 4050 1300
+Connection ~ 4050 1300
+Wire Wire Line
+	4050 1300 4050 1200
+Wire Wire Line
+	4950 1000 4650 1000
+Text Label 4950 1000 2    50   ~ 0
+PASS0
+Wire Wire Line
+	4650 1100 4950 1100
+Wire Wire Line
+	4950 1200 4650 1200
+Wire Wire Line
+	4650 1300 4950 1300
+Text Label 4950 1100 2    50   ~ 0
+PASS1
+Text Label 4950 1200 2    50   ~ 0
+PASS2
+Text Label 4950 1300 2    50   ~ 0
+PASS3
+Text Notes 3600 700  0    100  ~ 0
+Unused I/O Outputs
+Text Notes 3800 1800 0    50   ~ 0
+Unused I/O’s exposed on header for \ngeneric use, i.e. with buttons
+Wire Notes Line
+	3500 1900 5500 1900
+$EndSCHEMATC
