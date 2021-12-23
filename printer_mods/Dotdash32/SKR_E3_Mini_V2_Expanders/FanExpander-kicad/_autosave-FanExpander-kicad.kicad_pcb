@@ -210,7 +210,7 @@
   )
 
   (module Mounting_Holes:MountingHole_3.2mm_M3_Pad (layer F.Cu) (tedit 56D1B4CB) (tstamp 61C3EFB9)
-    (at 132.8928 55.5244)
+    (at 132.8674 57.8866)
     (descr "Mounting Hole 3.2mm, M3")
     (tags "mounting hole 3.2mm m3")
     (path /620ED7F0)
