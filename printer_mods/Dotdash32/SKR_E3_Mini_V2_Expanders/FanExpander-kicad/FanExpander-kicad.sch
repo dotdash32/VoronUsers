@@ -1211,7 +1211,7 @@ U 1 1 61C255C6
 P 2350 3250
 F 0 "F1" V 2150 3200 50  0000 L CNN
 F 1 "Polyfuse-1A" V 2250 3050 50  0000 L CNN
-F 2 "Fuse_Holders_and_Fuses:Fuse_SMD1206_HandSoldering" H 2400 3050 50  0001 L CNN
+F 2 "Fuse_Holders_and_Fuses:Fuse_SMD1206_Reflow" H 2400 3050 50  0001 L CNN
 F 3 "~" H 2350 3250 50  0001 C CNN
 	1    2350 3250
 	0    1    1    0   
@@ -1228,8 +1228,6 @@ Wire Wire Line
 	2650 4300 2650 4100
 Text Notes 550  4900 0    100  ~ 0
 LED Enable
-Wire Notes Line
-	500  5500 3000 5500
 Wire Notes Line width 12 style solid
 	3000 500  3000 6000
 Text Notes 4950 1100 0    100  ~ 0
@@ -1419,4 +1417,236 @@ Wire Wire Line
 Connection ~ 1500 3250
 Wire Wire Line
 	1500 3250 2200 3250
+$Comp
+L power:GND #PWR0103
+U 1 1 61E47425
+P 1200 7800
+F 0 "#PWR0103" H 1200 7550 50  0001 C CNN
+F 1 "GND" H 1205 7627 50  0000 C CNN
+F 2 "" H 1200 7800 50  0001 C CNN
+F 3 "" H 1200 7800 50  0001 C CNN
+	1    1200 7800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x20 SPL1
+U 1 1 61ED7192
+P 1600 6700
+F 0 "SPL1" H 1680 6692 50  0000 L CNN
+F 1 "Breakaway" H 1680 6601 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x20_Pitch1.00mm" H 1600 6700 50  0001 C CNN
+F 3 "~" H 1600 6700 50  0001 C CNN
+	1    1600 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR0105
+U 1 1 61EDE44B
+P 1000 5750
+F 0 "#PWR0105" H 1000 5600 50  0001 C CNN
+F 1 "+24V" H 1015 5923 50  0000 C CNN
+F 2 "" H 1000 5750 50  0001 C CNN
+F 3 "" H 1000 5750 50  0001 C CNN
+	1    1000 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0106
+U 1 1 61EDCDF9
+P 1250 5750
+F 0 "#PWR0106" H 1250 5600 50  0001 C CNN
+F 1 "+5V" H 1265 5923 50  0000 C CNN
+F 2 "" H 1250 5750 50  0001 C CNN
+F 3 "" H 1250 5750 50  0001 C CNN
+	1    1250 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 5750 1250 5800
+Wire Wire Line
+	1250 5800 1400 5800
+Wire Wire Line
+	1400 5900 1250 5900
+Wire Wire Line
+	1250 5900 1250 5800
+Connection ~ 1250 5800
+Wire Wire Line
+	1000 5750 1000 7700
+Wire Wire Line
+	1000 7700 1300 7700
+Wire Wire Line
+	1400 7600 1300 7600
+Wire Wire Line
+	1300 7600 1300 7700
+Connection ~ 1300 7700
+Wire Wire Line
+	1300 7700 1400 7700
+Wire Wire Line
+	1200 7800 1200 7500
+Wire Wire Line
+	1200 7500 1400 7500
+Wire Wire Line
+	1200 7500 1200 6800
+Wire Wire Line
+	1200 6000 1400 6000
+Connection ~ 1200 7500
+Wire Wire Line
+	1400 6100 550  6100
+Text Label 550  6100 0    50   ~ 0
+LED_Drive
+Wire Wire Line
+	1400 6700 1200 6700
+Connection ~ 1200 6700
+Wire Wire Line
+	1200 6700 1200 6000
+Wire Wire Line
+	1400 6800 1200 6800
+Connection ~ 1200 6800
+Wire Wire Line
+	1200 6800 1200 6700
+Wire Wire Line
+	1400 6200 550  6200
+Wire Wire Line
+	1400 6300 550  6300
+Wire Wire Line
+	1400 6400 550  6400
+Wire Wire Line
+	1400 7400 600  7400
+Wire Wire Line
+	1400 7300 600  7300
+Wire Wire Line
+	1400 7200 600  7200
+Wire Wire Line
+	1400 7100 600  7100
+Text Label 600  7300 0    50   ~ 0
+FAN2
+Text Label 600  7200 0    50   ~ 0
+FAN5
+Text Label 550  6200 0    50   ~ 0
+FAN4
+Text Label 550  6300 0    50   ~ 0
+FAN7
+Text Label 600  7100 0    50   ~ 0
+FAN3
+Text Label 550  6400 0    50   ~ 0
+FAN6
+Text Label 600  7400 0    50   ~ 0
+LED_Drive
+$Comp
+L power:GND #PWR0107
+U 1 1 61FFF90D
+P 2500 7800
+F 0 "#PWR0107" H 2500 7550 50  0001 C CNN
+F 1 "GND" H 2505 7627 50  0000 C CNN
+F 2 "" H 2500 7800 50  0001 C CNN
+F 3 "" H 2500 7800 50  0001 C CNN
+	1    2500 7800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x20 SPL2
+U 1 1 61FFF913
+P 2900 6700
+F 0 "SPL2" H 2980 6692 50  0000 L CNN
+F 1 "Breakaway" H 2980 6601 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x20_Pitch1.00mm" H 2900 6700 50  0001 C CNN
+F 3 "~" H 2900 6700 50  0001 C CNN
+	1    2900 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR0108
+U 1 1 61FFF919
+P 2300 5750
+F 0 "#PWR0108" H 2300 5600 50  0001 C CNN
+F 1 "+24V" H 2315 5923 50  0000 C CNN
+F 2 "" H 2300 5750 50  0001 C CNN
+F 3 "" H 2300 5750 50  0001 C CNN
+	1    2300 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0109
+U 1 1 61FFF91F
+P 2550 5750
+F 0 "#PWR0109" H 2550 5600 50  0001 C CNN
+F 1 "+5V" H 2565 5923 50  0000 C CNN
+F 2 "" H 2550 5750 50  0001 C CNN
+F 3 "" H 2550 5750 50  0001 C CNN
+	1    2550 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 5750 2550 5800
+Wire Wire Line
+	2550 5800 2700 5800
+Wire Wire Line
+	2700 5900 2550 5900
+Wire Wire Line
+	2550 5900 2550 5800
+Connection ~ 2550 5800
+Wire Wire Line
+	2300 5750 2300 7700
+Wire Wire Line
+	2300 7700 2600 7700
+Wire Wire Line
+	2700 7600 2600 7600
+Wire Wire Line
+	2600 7600 2600 7700
+Connection ~ 2600 7700
+Wire Wire Line
+	2600 7700 2700 7700
+Wire Wire Line
+	2500 7800 2500 7500
+Wire Wire Line
+	2500 7500 2700 7500
+Wire Wire Line
+	2500 7500 2500 6800
+Wire Wire Line
+	2500 6000 2700 6000
+Connection ~ 2500 7500
+Wire Wire Line
+	2700 6100 1850 6100
+Text Label 1850 6100 0    50   ~ 0
+LED_Drive
+Wire Wire Line
+	2700 6700 2500 6700
+Connection ~ 2500 6700
+Wire Wire Line
+	2500 6700 2500 6000
+Wire Wire Line
+	2700 6800 2500 6800
+Connection ~ 2500 6800
+Wire Wire Line
+	2500 6800 2500 6700
+Wire Wire Line
+	2700 6200 1850 6200
+Wire Wire Line
+	2700 6300 1850 6300
+Wire Wire Line
+	2700 6400 1850 6400
+Wire Wire Line
+	2700 7400 1900 7400
+Wire Wire Line
+	2700 7300 1900 7300
+Wire Wire Line
+	2700 7200 1900 7200
+Wire Wire Line
+	2700 7100 1900 7100
+Text Label 1900 7300 0    50   ~ 0
+FAN2
+Text Label 1900 7200 0    50   ~ 0
+FAN5
+Text Label 1850 6200 0    50   ~ 0
+FAN4
+Text Label 1850 6300 0    50   ~ 0
+FAN7
+Text Label 1900 7100 0    50   ~ 0
+FAN3
+Text Label 1850 6400 0    50   ~ 0
+FAN6
+Text Label 1900 7400 0    50   ~ 0
+LED_Drive
+Wire Notes Line
+	500  5500 3000 5500
 $EndSCHEMATC

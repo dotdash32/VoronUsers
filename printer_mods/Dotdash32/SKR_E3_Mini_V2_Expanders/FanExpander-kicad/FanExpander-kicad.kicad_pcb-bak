@@ -851,7 +851,7 @@
       (net 30 /FAN7_Dr))
     (pad 2 smd rect (at 1.1 0 180) (size 1.2 0.9) (layers F.Cu F.Paste F.Mask)
       (net 31 "Net-(D2-Pad2)"))
-    (model ${KISYS3DMOD}/LEDs.3dshapes/LED_0603.wrl
+    (model ${KISYS3DMOD}/LED_SMD.3dshapes/LED_0603_1608Metric.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -889,10 +889,10 @@
       (net 28 /FAN1_Dr))
     (pad 2 smd rect (at 1.1 0 180) (size 1.2 0.9) (layers F.Cu F.Paste F.Mask)
       (net 29 "Net-(D1-Pad2)"))
-    (model ${KISYS3DMOD}/LEDs.3dshapes/LED_0603.wrl
+    (model ${KISYS3DMOD}/LED_SMD.3dshapes/LED_0603_1608Metric.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 180))
+      (rotate (xyz 0 0 0))
     )
   )
 
@@ -2428,7 +2428,7 @@
       (net 36 /FAN6_Dr))
     (pad 2 smd rect (at 1.1 0 180) (size 1.2 0.9) (layers F.Cu F.Paste F.Mask)
       (net 6 "Net-(D8-Pad2)"))
-    (model ${KISYS3DMOD}/LEDs.3dshapes/LED_0603.wrl
+    (model ${KISYS3DMOD}/LED_SMD.3dshapes/LED_0603_1608Metric.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -2466,7 +2466,7 @@
       (net 35 /FAN5_Dr))
     (pad 2 smd rect (at 1.1 0 180) (size 1.2 0.9) (layers F.Cu F.Paste F.Mask)
       (net 5 "Net-(D7-Pad2)"))
-    (model ${KISYS3DMOD}/LEDs.3dshapes/LED_0603.wrl
+    (model ${KISYS3DMOD}/LED_SMD.3dshapes/LED_0603_1608Metric.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -2504,7 +2504,7 @@
       (net 34 /FAN4_Dr))
     (pad 2 smd rect (at 1.1 0 180) (size 1.2 0.9) (layers F.Cu F.Paste F.Mask)
       (net 4 "Net-(D6-Pad2)"))
-    (model ${KISYS3DMOD}/LEDs.3dshapes/LED_0603.wrl
+    (model ${KISYS3DMOD}/LED_SMD.3dshapes/LED_0603_1608Metric.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -2542,7 +2542,7 @@
       (net 33 /FAN3_Dr))
     (pad 2 smd rect (at 1.1 0 180) (size 1.2 0.9) (layers F.Cu F.Paste F.Mask)
       (net 3 "Net-(D5-Pad2)"))
-    (model ${KISYS3DMOD}/LEDs.3dshapes/LED_0603.wrl
+    (model ${KISYS3DMOD}/LED_SMD.3dshapes/LED_0603_1608Metric.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -2580,7 +2580,7 @@
       (net 32 /FAN2_Dr))
     (pad 2 smd rect (at 1.1 0 180) (size 1.2 0.9) (layers F.Cu F.Paste F.Mask)
       (net 2 "Net-(D4-Pad2)"))
-    (model ${KISYS3DMOD}/LEDs.3dshapes/LED_0603.wrl
+    (model ${KISYS3DMOD}/LED_SMD.3dshapes/LED_0603_1608Metric.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
