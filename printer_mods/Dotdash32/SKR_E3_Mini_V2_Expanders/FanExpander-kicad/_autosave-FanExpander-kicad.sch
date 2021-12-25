@@ -1683,8 +1683,6 @@ F 3 "" H 2650 2900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2100 5600 2100 6350
-Wire Wire Line
 	2300 7350 2200 7350
 Wire Wire Line
 	2300 7450 2200 7450
@@ -1702,28 +1700,16 @@ Wire Wire Line
 Wire Wire Line
 	1450 5650 1450 6650
 Wire Wire Line
-	2300 6450 2200 6450
-Wire Wire Line
-	2300 6550 2200 6550
-Wire Wire Line
-	2200 6550 2200 6450
-Wire Wire Line
-	2300 6350 2200 6350
-Wire Wire Line
-	2300 6250 2200 6250
-Wire Wire Line
-	2200 6250 2200 6350
-Connection ~ 2200 6350
-Wire Wire Line
-	2200 6350 2100 6350
-Connection ~ 2100 6350
+	2100 5600 2100 6550
 Wire Wire Line
 	1900 5600 1900 6450
 Wire Wire Line
-	2100 6350 2100 7350
+	2300 6550 2100 6550
+Connection ~ 2100 6550
 Wire Wire Line
-	2200 6450 1900 6450
-Connection ~ 2200 6450
+	2100 6550 2100 7350
+Wire Wire Line
+	2300 6450 1900 6450
 Connection ~ 1900 6450
 Wire Wire Line
 	1900 6450 1900 7650
