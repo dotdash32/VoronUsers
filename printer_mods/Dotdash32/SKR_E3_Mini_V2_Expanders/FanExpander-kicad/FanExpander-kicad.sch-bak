@@ -435,7 +435,7 @@ Wire Wire Line
 Text Label 5700 3300 0    50   ~ 0
 FAN5_Dr
 Text Notes 500  2800 0    100  ~ 0
-5V In
+5V In Header
 $Comp
 L Connector_Generic:Conn_01x02 J5
 U 1 1 61E6D114
@@ -453,7 +453,7 @@ Text Label 4200 3100 0    50   ~ 0
 F4V
 Text Label 6050 3100 0    50   ~ 0
 F5V
-Text Label 2100 4150 2    50   ~ 0
+Text Label 2150 4150 2    50   ~ 0
 24V_unFused
 Text Label 1850 1850 2    50   ~ 0
 5V_EXP
@@ -478,7 +478,7 @@ U 1 1 622F9171
 P 2150 1650
 F 0 "JP10" V 2196 1718 50  0000 L CNN
 F 1 "FAN_SEL" V 1850 1550 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch1.00mm" H 2150 1650 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch1.27mm" H 2150 1650 50  0001 C CNN
 F 3 "~" H 2150 1650 50  0001 C CNN
 	1    2150 1650
 	0    -1   -1   0   
@@ -790,7 +790,7 @@ Wire Wire Line
 Wire Wire Line
 	1900 1850 2150 1850
 Wire Wire Line
-	850  4150 2200 4150
+	850  4150 1250 4150
 Wire Wire Line
 	2600 4150 2600 3950
 Text Notes 3100 4500 0    100  ~ 0
@@ -961,52 +961,6 @@ Fan5
 Wire Notes Line
 	500  2600 10500 2600
 $Comp
-L power:GND #PWR0103
-U 1 1 61E47425
-P 2000 7750
-F 0 "#PWR0103" H 2000 7500 50  0001 C CNN
-F 1 "GND" H 2005 7577 50  0000 C CNN
-F 2 "" H 2000 7750 50  0001 C CNN
-F 3 "" H 2000 7750 50  0001 C CNN
-	1    2000 7750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+24V #PWR0105
-U 1 1 61EDE44B
-P 1900 5600
-F 0 "#PWR0105" H 1900 5450 50  0001 C CNN
-F 1 "+24V" H 1915 5773 50  0000 C CNN
-F 2 "" H 1900 5600 50  0001 C CNN
-F 3 "" H 1900 5600 50  0001 C CNN
-	1    1900 5600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0106
-U 1 1 61EDCDF9
-P 2100 5600
-F 0 "#PWR0106" H 2100 5450 50  0001 C CNN
-F 1 "+5V" H 2115 5773 50  0000 C CNN
-F 2 "" H 2100 5600 50  0001 C CNN
-F 3 "" H 2100 5600 50  0001 C CNN
-	1    2100 5600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1900 7650 2200 7650
-Wire Wire Line
-	2300 7550 2200 7550
-Wire Wire Line
-	2200 7550 2200 7650
-Connection ~ 2200 7650
-Wire Wire Line
-	2200 7650 2300 7650
-Text Label 1600 7150 0    50   ~ 0
-FAN5
-Text Label 1600 7250 0    50   ~ 0
-FAN7
-$Comp
 L Connector_Generic:Conn_01x02 J10
 U 1 1 61C5F40F
 P 650 4150
@@ -1018,15 +972,15 @@ F 3 "~" H 650 4150 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	850  4050 1250 4050
-Text Label 1250 4050 2    50   ~ 0
+	850  4050 1200 4050
+Text Label 1200 4050 2    50   ~ 0
 FAN0_Dr
 $Comp
 L Device:Polyfuse F2
 U 1 1 61CA0A67
 P 2350 4150
 F 0 "F2" V 2150 4100 50  0000 L CNN
-F 1 "Polyfuse-2.5A" V 2250 3950 50  0000 L CNN
+F 1 "ATM-Fuse" V 2250 3950 50  0000 L CNN
 F 2 "Fuse:Fuseholder_Blade_Mini_Keystone_3544" H 2400 3950 50  0001 L CNN
 F 3 "~" H 2350 4150 50  0001 C CNN
 	1    2350 4150
@@ -1036,8 +990,8 @@ Wire Notes Line
 	8700 900  8700 4300
 Wire Wire Line
 	2500 4150 2600 4150
-Text Notes 500  4500 0    100  ~ 0
-Unfused Inputs
+Text Notes 500  4650 0    100  ~ 0
+High Amperage\nInputs
 Wire Wire Line
 	8000 3950 8000 4000
 Connection ~ 8000 3950
@@ -1387,28 +1341,28 @@ $EndComp
 $Comp
 L Device:R_US R22
 U 1 1 62092F7E
-P 3450 1600
-F 0 "R22" V 3655 1600 50  0000 C CNN
-F 1 "560R" V 3564 1600 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 3490 1590 50  0001 C CNN
-F 3 "~" H 3450 1600 50  0001 C CNN
-	1    3450 1600
+P 3450 1450
+F 0 "R22" V 3655 1450 50  0000 C CNN
+F 1 "560R" V 3564 1450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 3490 1440 50  0001 C CNN
+F 3 "~" H 3450 1450 50  0001 C CNN
+	1    3450 1450
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D3
 U 1 1 62092F84
-P 4000 1850
-F 0 "D3" V 4039 1733 50  0000 R CNN
-F 1 "LED" V 3948 1733 50  0000 R CNN
-F 2 "LED_SMD:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm" H 4000 1850 50  0001 C CNN
-F 3 "~" H 4000 1850 50  0001 C CNN
-	1    4000 1850
+P 3650 1600
+F 0 "D3" V 3689 1483 50  0000 R CNN
+F 1 "LED" V 3598 1483 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm" H 3650 1600 50  0001 C CNN
+F 3 "~" H 3650 1600 50  0001 C CNN
+	1    3650 1600
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	4350 1500 4250 1500
-Text Label 3900 1500 0    50   ~ 0
+Text Label 3900 1600 0    50   ~ 0
 FAN0_Dr
 Text Notes 3050 1100 0    100  ~ 0
 Fan0
@@ -1448,40 +1402,16 @@ Wire Wire Line
 	4350 1250 4350 1200
 Text Label 3100 1300 0    50   ~ 0
 LED_Drive
-Wire Wire Line
-	3450 1300 3450 1450
 $Comp
 L Mechanical:MountingHole_Pad MH2
 U 1 1 620EB36C
-P 6050 4650
-F 0 "MH2" V 6004 4800 50  0000 L CNN
-F 1 "MountingHole" V 6095 4800 50  0000 L CNN
-F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 6050 4650 50  0001 C CNN
-F 3 "~" H 6050 4650 50  0001 C CNN
-	1    6050 4650
-	0    1    1    0   
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad MH3
-U 1 1 620ED7F0
 P 6050 4850
-F 0 "MH3" V 6004 5000 50  0000 L CNN
+F 0 "MH2" V 6004 5000 50  0000 L CNN
 F 1 "MountingHole" V 6095 5000 50  0000 L CNN
 F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 6050 4850 50  0001 C CNN
 F 3 "~" H 6050 4850 50  0001 C CNN
 	1    6050 4850
 	0    1    1    0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x21 SPL1
-U 1 1 621C1D1F
-P 2500 6650
-F 0 "SPL1" H 2580 6692 50  0000 L CNN
-F 1 "Fans 4-7" H 2580 6601 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x21_Pitch1.00mm" H 2500 6650 50  0001 C CNN
-F 3 "~" H 2500 6650 50  0001 C CNN
-	1    2500 6650
-	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0110
@@ -1509,16 +1439,10 @@ Wire Notes Line
 	6850 900  6850 5250
 Text Notes 4950 4500 0    100  ~ 0
 Mounting Holes
-Text Notes 600  5600 0    100  ~ 0
-Breakaway\nConnector
-Text Notes 600  5900 0    50   ~ 0
-Carries Fans 4-7\ncan be removed for \nLite Version
 Text Notes 1850 2600 0    50   ~ 0
 SKR 2 EXP2\nPA6  | PA5\nPE7  | PA4\nPB2  | PA7\nPC4  | RST\nGND  | NC
-Text Notes 2550 -150 0    50   ~ 0
-Fan0 is a Passthrough Fan.\nNo control is exerted on this fan.\nIt can either select the voltage \nfor a fan on the primary board,\nor can hve a voltage selectable \nalways on fan.
-Text Notes -1150 5250 0    50   ~ 0
-These pins bypass the PTC Fuses,\nallowing higher current devices\nto be run.  An external fuse \nshould be used, and Fans 7-6\nprefered (shorter traces)
+Text Notes 3050 2500 0    50   ~ 0
+Fan0 is a Passthrough Fan.\nNo control is exerted on this fan.\nIt can either select the voltage \nfor a fan on the primary board,\nor can be a voltage selectable \nalways on fan (JP12).
 Wire Notes Line width 12 style solid
 	3000 4300 10500 4300
 Wire Notes Line
@@ -1528,13 +1452,11 @@ Wire Notes Line width 12 style solid
 Wire Notes Line width 12 style solid
 	3000 500  3000 5250
 Wire Notes Line
-	3000 5250 3000 8000
-Wire Notes Line
 	3000 5250 6850 5250
-Text Label 1150 2750 0    50   ~ 0
+Text Label 1950 2700 2    50   ~ 0
 5V_EXP
 Wire Wire Line
-	1500 2750 1150 2750
+	1950 2700 1600 2700
 $Comp
 L power:GND #PWR0111
 U 1 1 61CB2410
@@ -1548,9 +1470,9 @@ F 3 "" H 1050 3200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1050 3200 900  3200
-Connection ~ 1500 3100
+Connection ~ 1600 3100
 Wire Wire Line
-	900  3100 1500 3100
+	900  3100 1600 3100
 $Comp
 L Connector_Generic:Conn_01x02 J9
 U 1 1 61C854F0
@@ -1563,18 +1485,18 @@ F 3 "~" H 700 3200 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	1500 3100 2200 3100
+	1600 3100 2200 3100
 Wire Wire Line
-	1500 3100 1500 3050
+	1600 3100 1600 3000
 $Comp
 L Jumper:SolderJumper_2_Bridged JP8
 U 1 1 61D42FDA
-P 1500 2900
-F 0 "JP8" V 1454 2968 50  0000 L CNN
-F 1 "5V_EXP_CONN" V 1545 2968 50  0000 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 1500 2900 50  0001 C CNN
-F 3 "~" H 1500 2900 50  0001 C CNN
-	1    1500 2900
+P 1600 2850
+F 0 "JP8" V 1554 2918 50  0000 L CNN
+F 1 "5V_EXP_CONN" V 1645 2918 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 1600 2850 50  0001 C CNN
+F 3 "~" H 1600 2850 50  0001 C CNN
+	1    1600 2850
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -1586,7 +1508,7 @@ L Device:Polyfuse F1
 U 1 1 61C255C6
 P 2350 3100
 F 0 "F1" V 2150 3050 50  0000 L CNN
-F 1 "Polyfuse-2.5A" V 2250 2900 50  0000 L CNN
+F 1 "ATM-Fuse" V 2250 2900 50  0000 L CNN
 F 2 "Fuse:Fuseholder_Blade_Mini_Keystone_3544" H 2400 2900 50  0001 L CNN
 F 3 "~" H 2350 3100 50  0001 C CNN
 	1    2350 3100
@@ -1605,91 +1527,19 @@ F 3 "" H 2650 2900 50  0001 C CNN
 	1    2650 2900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2300 7350 2200 7350
-Wire Wire Line
-	2300 7450 2200 7450
-Wire Wire Line
-	2200 7450 2200 7350
-Connection ~ 2200 7350
-Wire Wire Line
-	2200 7350 2100 7350
 $Comp
 L Mechanical:MountingHole_Pad MH1
 U 1 1 626DA97D
-P 5650 4850
-F 0 "MH1" V 5604 5000 50  0000 L CNN
-F 1 "MountingHole" V 5695 5000 50  0000 L CNN
-F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 5650 4850 50  0001 C CNN
-F 3 "~" H 5650 4850 50  0001 C CNN
-	1    5650 4850
-	0    -1   -1   0   
+P 6050 4650
+F 0 "MH1" V 6004 4800 50  0000 L CNN
+F 1 "MountingHole" V 6095 4800 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 6050 4650 50  0001 C CNN
+F 3 "~" H 6050 4650 50  0001 C CNN
+	1    6050 4650
+	0    1    1    0   
 $EndComp
-Wire Wire Line
-	5750 4850 5850 4850
-Wire Wire Line
-	2300 5650 1600 5650
-Text Label 1600 5650 0    50   ~ 0
-FAN4
-Wire Wire Line
-	2100 5600 2100 6350
-Wire Wire Line
-	2300 6350 2100 6350
-Connection ~ 2100 6350
-Wire Wire Line
-	2100 6350 2100 6450
-Wire Wire Line
-	2300 6850 1450 6850
-Wire Wire Line
-	2300 6550 1900 6550
-Connection ~ 1900 6550
-Wire Wire Line
-	1900 6550 1900 6650
-Wire Wire Line
-	2300 6650 1900 6650
-Connection ~ 1900 6650
-Wire Wire Line
-	1900 6650 1900 7650
-Wire Wire Line
-	1900 5600 1900 6550
-Wire Wire Line
-	2300 6450 2100 6450
-Connection ~ 2100 6450
-Wire Wire Line
-	2100 6450 2100 7350
-Wire Wire Line
-	2300 7150 1600 7150
-Wire Wire Line
-	2300 7250 1600 7250
-Text Label 1600 5850 0    50   ~ 0
-FAN6
-Wire Wire Line
-	2300 5850 1600 5850
-Text Label 1450 5950 0    50   ~ 0
-LED_Drive
-Wire Wire Line
-	1450 5950 1450 6850
-Wire Wire Line
-	2300 5750 1600 5750
-Text Label 1600 5750 0    50   ~ 0
-FAN2
-Wire Wire Line
-	1450 5950 2300 5950
-Wire Wire Line
-	2000 7750 2000 5550
 Wire Wire Line
 	2550 1650 2300 1650
-$Comp
-L Jumper:SolderJumper_2_Open JP11
-U 1 1 61D6A0D3
-P 3650 1850
-F 0 "JP11" H 3650 2055 50  0000 C CNN
-F 1 "FAN0_LEDen" H 3650 1964 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 3650 1850 50  0001 C CNN
-F 3 "~" H 3650 1850 50  0001 C CNN
-	1    3650 1850
-	-1   0    0    1   
-$EndComp
 $Comp
 L Jumper:SolderJumper_2_Open JP12
 U 1 1 61D688A0
@@ -1713,81 +1563,71 @@ F 3 "" H 4700 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3800 1850 3850 1850
+	3800 1600 4250 1600
 Wire Wire Line
-	4150 1850 4250 1850
-Wire Wire Line
-	4250 1500 4250 1850
-Connection ~ 4250 1850
-Wire Wire Line
-	4250 1850 4350 1850
-Wire Wire Line
-	4250 1500 3900 1500
-Connection ~ 4250 1500
+	4250 1500 4250 1600
 Wire Wire Line
 	4650 1850 4700 1850
 Wire Wire Line
 	4700 1850 4700 1900
 Wire Wire Line
 	3450 1300 3100 1300
+Wire Wire Line
+	3450 1600 3500 1600
+Wire Wire Line
+	4250 1600 4250 1850
+Wire Wire Line
+	4250 1850 4350 1850
+Connection ~ 4250 1600
 $Comp
-L power:GND #PWR0107
-U 1 1 61EDFEE1
-P 2000 4950
-F 0 "#PWR0107" H 2000 4700 50  0001 C CNN
-F 1 "GND" H 2005 4777 50  0000 C CNN
-F 2 "" H 2000 4950 50  0001 C CNN
-F 3 "" H 2000 4950 50  0001 C CNN
-	1    2000 4950
+L Connector_Generic:Conn_01x03 J12
+U 1 1 61F3F4E8
+P 1800 4850
+F 0 "J12" H 1718 4525 50  0000 C CNN
+F 1 "HI_PWR2" H 1718 4616 50  0000 C CNN
+F 2 "TerminalBlock_Pheonix:TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal" H 1800 4850 50  0001 C CNN
+F 3 "~" H 1800 4850 50  0001 C CNN
+	1    1800 4850
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 61FA64D9
+P 2050 5000
+F 0 "#PWR0108" H 2050 4750 50  0001 C CNN
+F 1 "GND" H 2055 4827 50  0000 C CNN
+F 2 "" H 2050 5000 50  0001 C CNN
+F 3 "" H 2050 5000 50  0001 C CNN
+	1    2050 5000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1950 4800 2000 4800
+	2000 4850 2050 4850
 Wire Wire Line
-	1950 4900 2550 4900
+	2000 4950 2600 4950
 Wire Wire Line
-	1950 4700 2550 4700
-Text Label 2550 4700 2    50   ~ 0
+	2000 4750 2600 4750
+Text Label 2600 4750 2    50   ~ 0
 5V_unFused
-Text Label 2550 4900 2    50   ~ 0
+Text Label 2600 4950 2    50   ~ 0
 24V_unFused
+Wire Wire Line
+	2050 5000 2050 4850
+Text Notes 550  6250 0    50   ~ 0
+Notes on Power Input\nPower should be supplied to only \n1 (ONE) input per voltage level.\n\n5V comes from EXP, 5V header, or 5V Screw Terminal.\n  If using 5V Header/Screw Terminal and EXP1, cut JP8.\n  If using Screw Terminal, do not connect 5V Header\n\n24V comes from Fan0 In or 24V Screw Terminal\n  If using Screw Terminal, cut JP11\n     JP12 can be closed to make Fan0 Always On\n
 $Comp
-L Connector_Generic:Conn_01x03 J12
-U 1 1 61FDDC98
-P 1750 4800
-F 0 "J12" H 1668 4475 50  0000 C CNN
-F 1 "HI_PWR_IN" H 1668 4566 50  0000 C CNN
-F 2 "Connectors_Terminal_Blocks:TerminalBlock_bornier-3_P5.08mm" H 1750 4800 50  0001 C CNN
-F 3 "~" H 1750 4800 50  0001 C CNN
-	1    1750 4800
-	-1   0    0    1   
+L Jumper:SolderJumper_2_Bridged JP11
+U 1 1 62096DA4
+P 1400 4150
+F 0 "JP11" H 1350 4350 50  0000 L CNN
+F 1 "Fan0_PWR" H 1250 4250 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 1400 4150 50  0001 C CNN
+F 3 "~" H 1400 4150 50  0001 C CNN
+	1    1400 4150
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2000 4950 2000 4800
-$Comp
-L Connector_Generic:Conn_01x36 SPL3
-U 1 1 61D71BE5
-P 6100 6100
-F 0 "SPL3" V 6317 6046 50  0000 C CNN
-F 1 "Conn_01x36" V 6226 6046 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x36_Pitch1.00mm" H 6100 6100 50  0001 C CNN
-F 3 "~" H 6100 6100 50  0001 C CNN
-	1    6100 6100
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x37 SPL2
-U 1 1 61D60D1C
-P 6200 5650
-F 0 "SPL2" V 6417 5646 50  0000 C CNN
-F 1 "Conn_01x37" V 6326 5646 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x37_Pitch1.00mm" H 6200 5650 50  0001 C CNN
-F 3 "~" H 6200 5650 50  0001 C CNN
-	1    6200 5650
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3450 1750 3450 1850
-Wire Wire Line
-	3450 1850 3500 1850
+	1550 4150 2200 4150
+Text Label 900  4150 0    50   ~ 0
+24V_F0
 $EndSCHEMATC
