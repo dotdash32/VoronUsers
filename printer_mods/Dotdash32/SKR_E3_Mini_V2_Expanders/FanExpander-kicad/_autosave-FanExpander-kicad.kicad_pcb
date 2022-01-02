@@ -638,7 +638,7 @@
     )
   )
 
-  (module Fuse:Fuseholder_Blade_Mini_Keystone_3544 (layer F.Cu) (tedit 61D0FFB0) (tstamp 61D1A01C)
+  (module Fuse:Fuseholder_Blade_Mini_Keystone_3544 (layer F.Cu) (tedit 61D0FFB0) (tstamp 61D20A00)
     (at 55.9943 76.1873 270)
     (path /61C255C6)
     (fp_text reference F1 (at 0 3.4 90) (layer F.SilkS)
@@ -2257,7 +2257,7 @@
   )
 
   (module Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight (layer F.Cu) (tedit 58EAE7F0) (tstamp 61C7A6B6)
-    (at 50.4317 74.803 270)
+    (at 50.4317 74.7649 270)
     (descr "JST XH series connector, B02B-XH-A, top entry type, through hole")
     (tags "connector jst xh tht top vertical 2.50mm")
     (path /61C5F40F)

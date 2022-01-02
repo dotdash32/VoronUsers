@@ -1027,7 +1027,7 @@ U 1 1 61CA0A67
 P 2350 4150
 F 0 "F2" V 2150 4100 50  0000 L CNN
 F 1 "Polyfuse-2.5A" V 2250 3950 50  0000 L CNN
-F 2 "Fuse:Fuse_2920_7451Metric" H 2400 3950 50  0001 L CNN
+F 2 "Fuse:Fuseholder_Blade_Mini_Keystone_3544" H 2400 3950 50  0001 L CNN
 F 3 "~" H 2350 4150 50  0001 C CNN
 	1    2350 4150
 	0    1    1    0   
@@ -1407,14 +1407,8 @@ F 3 "~" H 3650 1600 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	4350 1500 4200 1500
-Wire Wire Line
-	4200 1500 4200 1600
-Wire Wire Line
-	3500 1600 3450 1600
-Wire Wire Line
-	3800 1600 4200 1600
-Text Label 3850 1600 0    50   ~ 0
+	4350 1500 4250 1500
+Text Label 3900 1600 0    50   ~ 0
 FAN0_Dr
 Text Notes 3050 1100 0    100  ~ 0
 Fan0
@@ -1454,8 +1448,6 @@ Wire Wire Line
 	4350 1250 4350 1200
 Text Label 3100 1300 0    50   ~ 0
 LED_Drive
-Wire Wire Line
-	3100 1300 3450 1300
 $Comp
 L Mechanical:MountingHole_Pad MH2
 U 1 1 620EB36C
@@ -1509,78 +1501,21 @@ Wire Wire Line
 Wire Wire Line
 	5850 4650 5850 4850
 Connection ~ 5850 4850
-$Comp
-L Connector_Generic:Conn_02x02_Odd_Even J11
-U 1 1 61E53681
-P 2150 4750
-F 0 "J11" H 2200 4967 50  0000 C CNN
-F 1 "HI_PWR_IN" H 2200 4876 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x02_Pitch2.54mm" H 2150 4750 50  0001 C CNN
-F 3 "~" H 2150 4750 50  0001 C CNN
-	1    2150 4750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0112
-U 1 1 61E55553
-P 1850 4950
-F 0 "#PWR0112" H 1850 4700 50  0001 C CNN
-F 1 "GND" H 1855 4777 50  0000 C CNN
-F 2 "" H 1850 4950 50  0001 C CNN
-F 3 "" H 1850 4950 50  0001 C CNN
-	1    1850 4950
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0113
-U 1 1 61E57DBE
-P 2550 4650
-F 0 "#PWR0113" H 2550 4500 50  0001 C CNN
-F 1 "+5V" H 2565 4823 50  0000 C CNN
-F 2 "" H 2550 4650 50  0001 C CNN
-F 3 "" H 2550 4650 50  0001 C CNN
-	1    2550 4650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+24V #PWR0114
-U 1 1 61E57DC4
-P 2800 4650
-F 0 "#PWR0114" H 2800 4500 50  0001 C CNN
-F 1 "+24V" H 2815 4823 50  0000 C CNN
-F 2 "" H 2800 4650 50  0001 C CNN
-F 3 "" H 2800 4650 50  0001 C CNN
-	1    2800 4650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2800 4650 2800 4750
-Wire Wire Line
-	1850 4950 1850 4850
-Wire Wire Line
-	1850 4750 1950 4750
-Wire Wire Line
-	1850 4850 1950 4850
-Connection ~ 1850 4850
-Wire Wire Line
-	1850 4850 1850 4750
 Wire Notes Line
 	4900 900  4900 5250
 Wire Notes Line
 	6850 900  6850 5250
 Text Notes 4950 4500 0    100  ~ 0
 Mounting Holes
-Text Notes 4950 4600 0    50   ~ 0
-far from connector
 Text Notes 600  5600 0    100  ~ 0
 Breakaway\nConnector
 Text Notes 600  5900 0    50   ~ 0
 Carries Fans 4-7\ncan be removed for \nLite Version
 Text Notes 1850 2600 0    50   ~ 0
 SKR 2 EXP2\nPA6  | PA5\nPE7  | PA4\nPB2  | PA7\nPC4  | RST\nGND  | NC
-Text Notes 3050 2350 0    50   ~ 0
+Text Notes 2550 -150 0    50   ~ 0
 Fan0 is a Passthrough Fan.\nNo control is exerted on this fan.\nIt can either select the voltage \nfor a fan on the primary board,\nor can hve a voltage selectable \nalways on fan.
-Text Notes 500  5000 0    50   ~ 0
+Text Notes -1150 5250 0    50   ~ 0
 These pins bypass the PTC Fuses,\nallowing higher current devices\nto be run.  An external fuse \nshould be used, and Fans 7-6\nprefered (shorter traces)
 Wire Notes Line width 12 style solid
 	3000 4300 10500 4300
@@ -1650,7 +1585,7 @@ U 1 1 61C255C6
 P 2350 3100
 F 0 "F1" V 2150 3050 50  0000 L CNN
 F 1 "Polyfuse-2.5A" V 2250 2900 50  0000 L CNN
-F 2 "Fuse:Fuse_2920_7451Metric" H 2400 2900 50  0001 L CNN
+F 2 "Fuse:Fuseholder_Blade_Mini_Keystone_3544" H 2400 2900 50  0001 L CNN
 F 3 "~" H 2350 3100 50  0001 C CNN
 	1    2350 3100
 	0    1    1    0   
@@ -1704,12 +1639,6 @@ Wire Wire Line
 Wire Wire Line
 	2300 6850 1450 6850
 Wire Wire Line
-	2550 4650 2550 4850
-Wire Wire Line
-	2450 4850 2550 4850
-Wire Wire Line
-	2450 4750 2800 4750
-Wire Wire Line
 	2300 6550 1900 6550
 Connection ~ 1900 6550
 Wire Wire Line
@@ -1748,4 +1677,99 @@ Wire Wire Line
 	2000 7750 2000 5550
 Wire Wire Line
 	2550 1650 2300 1650
+$Comp
+L Jumper:SolderJumper_2_Open JP12
+U 1 1 61D688A0
+P 4500 1850
+F 0 "JP12" H 4500 2055 50  0000 C CNN
+F 1 "FAN0_CTRL" H 4500 1964 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm" H 4500 1850 50  0001 C CNN
+F 3 "~" H 4500 1850 50  0001 C CNN
+	1    4500 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR025
+U 1 1 61DE8DF2
+P 4700 1900
+F 0 "#PWR025" H 4700 1650 50  0001 C CNN
+F 1 "GND" H 4705 1727 50  0000 C CNN
+F 2 "" H 4700 1900 50  0001 C CNN
+F 3 "" H 4700 1900 50  0001 C CNN
+	1    4700 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 1600 4250 1600
+Wire Wire Line
+	4250 1500 4250 1600
+Wire Wire Line
+	4650 1850 4700 1850
+Wire Wire Line
+	4700 1850 4700 1900
+Wire Wire Line
+	3450 1300 3100 1300
+$Comp
+L power:GND #PWR0107
+U 1 1 61EDFEE1
+P 2000 4950
+F 0 "#PWR0107" H 2000 4700 50  0001 C CNN
+F 1 "GND" H 2005 4777 50  0000 C CNN
+F 2 "" H 2000 4950 50  0001 C CNN
+F 3 "" H 2000 4950 50  0001 C CNN
+	1    2000 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 4800 2000 4800
+Wire Wire Line
+	1950 4900 2550 4900
+Wire Wire Line
+	1950 4700 2550 4700
+Text Label 2550 4700 2    50   ~ 0
+5V_unFused
+Text Label 2550 4900 2    50   ~ 0
+24V_unFused
+$Comp
+L Connector_Generic:Conn_01x03 J12
+U 1 1 61FDDC98
+P 1750 4800
+F 0 "J12" H 1668 4475 50  0000 C CNN
+F 1 "HI_PWR_IN" H 1668 4566 50  0000 C CNN
+F 2 "Connectors_Terminal_Blocks:TerminalBlock_bornier-3_P5.08mm" H 1750 4800 50  0001 C CNN
+F 3 "~" H 1750 4800 50  0001 C CNN
+	1    1750 4800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2000 4950 2000 4800
+$Comp
+L Connector_Generic:Conn_01x36 SPL3
+U 1 1 61D71BE5
+P 6100 6100
+F 0 "SPL3" V 6317 6046 50  0000 C CNN
+F 1 "Conn_01x36" V 6226 6046 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x36_Pitch1.00mm" H 6100 6100 50  0001 C CNN
+F 3 "~" H 6100 6100 50  0001 C CNN
+	1    6100 6100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x37 SPL2
+U 1 1 61D60D1C
+P 6200 5650
+F 0 "SPL2" V 6417 5646 50  0000 C CNN
+F 1 "Conn_01x37" V 6326 5646 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x37_Pitch1.00mm" H 6200 5650 50  0001 C CNN
+F 3 "~" H 6200 5650 50  0001 C CNN
+	1    6200 5650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3450 1600 3500 1600
+Wire Wire Line
+	4250 1600 4250 1850
+Wire Wire Line
+	4250 1850 4350 1850
+Connection ~ 4250 1600
 $EndSCHEMATC
