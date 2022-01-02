@@ -17,7 +17,7 @@ Text Notes 1300 800  0    150  ~ 30
 Inputs
 Wire Wire Line
 	550  1450 850  1450
-Text Label 550  1450 0    50   ~ 0
+Text Label 550  1650 0    50   ~ 0
 FAN1
 Wire Wire Line
 	850  1550 550  1550
@@ -31,11 +31,11 @@ Wire Wire Line
 	1350 1650 1650 1650
 Text Label 550  1550 0    50   ~ 0
 FAN2
-Text Label 550  1650 0    50   ~ 0
-FAN3
 Text Label 550  1750 0    50   ~ 0
+FAN3
+Text Label 550  1450 0    50   ~ 0
 FAN4
-Text Label 1650 1450 2    50   ~ 0
+Text Label 1650 1650 2    50   ~ 0
 FAN5
 $Comp
 L power:GND #PWR0102
@@ -477,8 +477,8 @@ L Jumper:SolderJumper_3_Open JP10
 U 1 1 622F9171
 P 2150 1650
 F 0 "JP10" V 2196 1718 50  0000 L CNN
-F 1 "FAN_SEL" V 2105 1718 50  0000 L CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels" H 2150 1650 50  0001 C CNN
+F 1 "FAN_SEL" V 1850 1550 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch1.00mm" H 2150 1650 50  0001 C CNN
 F 3 "~" H 2150 1650 50  0001 C CNN
 	1    2150 1650
 	0    -1   -1   0   
@@ -487,10 +487,8 @@ Wire Wire Line
 	1350 1750 1900 1750
 Wire Wire Line
 	1350 1550 1900 1550
-Text Label 1650 1650 2    50   ~ 0
+Text Label 1650 1450 2    50   ~ 0
 FAN6
-Wire Wire Line
-	2300 1650 2550 1650
 Text Label 2550 1650 2    50   ~ 0
 FAN7
 $Comp
@@ -1004,16 +1002,10 @@ Wire Wire Line
 Connection ~ 2200 7650
 Wire Wire Line
 	2200 7650 2300 7650
-Text Label 1450 5650 0    50   ~ 0
-LED_Drive
-Text Label 750  6900 0    50   ~ 0
+Text Label 1600 7150 0    50   ~ 0
 FAN5
-Text Label 900  6300 0    50   ~ 0
-FAN4
-Text Label 750  6800 0    50   ~ 0
+Text Label 1600 7250 0    50   ~ 0
 FAN7
-Text Label 900  6400 0    50   ~ 0
-FAN6
 $Comp
 L Connector_Generic:Conn_01x02 J10
 U 1 1 61C5F40F
@@ -1465,10 +1457,10 @@ LED_Drive
 Wire Wire Line
 	3100 1300 3450 1300
 $Comp
-L Mechanical:MountingHole_Pad MH1
+L Mechanical:MountingHole_Pad MH2
 U 1 1 620EB36C
 P 6050 4650
-F 0 "MH1" V 6004 4800 50  0000 L CNN
+F 0 "MH2" V 6004 4800 50  0000 L CNN
 F 1 "MountingHole" V 6095 4800 50  0000 L CNN
 F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 6050 4650 50  0001 C CNN
 F 3 "~" H 6050 4650 50  0001 C CNN
@@ -1476,10 +1468,10 @@ F 3 "~" H 6050 4650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad MH2
+L Mechanical:MountingHole_Pad MH3
 U 1 1 620ED7F0
 P 6050 4850
-F 0 "MH2" V 6004 5000 50  0000 L CNN
+F 0 "MH3" V 6004 5000 50  0000 L CNN
 F 1 "MountingHole" V 6095 5000 50  0000 L CNN
 F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 6050 4850 50  0001 C CNN
 F 3 "~" H 6050 4850 50  0001 C CNN
@@ -1562,13 +1554,7 @@ F 3 "" H 2800 4650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2550 4650 2550 4750
-Wire Wire Line
-	2550 4750 2450 4750
-Wire Wire Line
-	2450 4850 2800 4850
-Wire Wire Line
-	2800 4650 2800 4850
+	2800 4650 2800 4750
 Wire Wire Line
 	1850 4950 1850 4850
 Wire Wire Line
@@ -1683,8 +1669,6 @@ F 3 "" H 2650 2900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2100 5600 2100 6350
-Wire Wire Line
 	2300 7350 2200 7350
 Wire Wire Line
 	2300 7450 2200 7450
@@ -1693,38 +1677,75 @@ Wire Wire Line
 Connection ~ 2200 7350
 Wire Wire Line
 	2200 7350 2100 7350
+$Comp
+L Mechanical:MountingHole_Pad MH1
+U 1 1 626DA97D
+P 5650 4850
+F 0 "MH1" V 5604 5000 50  0000 L CNN
+F 1 "MountingHole" V 5695 5000 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 5650 4850 50  0001 C CNN
+F 3 "~" H 5650 4850 50  0001 C CNN
+	1    5650 4850
+	0    -1   -1   0   
+$EndComp
 Wire Wire Line
-	2000 5950 2000 7750
+	5750 4850 5850 4850
 Wire Wire Line
-	2300 6650 1450 6650
+	2300 5650 1600 5650
+Text Label 1600 5650 0    50   ~ 0
+FAN4
 Wire Wire Line
-	2300 5650 1450 5650
+	2100 5600 2100 6350
 Wire Wire Line
-	1450 5650 1450 6650
-Wire Wire Line
-	2300 6450 2200 6450
-Wire Wire Line
-	2300 6550 2200 6550
-Wire Wire Line
-	2200 6550 2200 6450
-Wire Wire Line
-	2300 6350 2200 6350
-Wire Wire Line
-	2300 6250 2200 6250
-Wire Wire Line
-	2200 6250 2200 6350
-Connection ~ 2200 6350
-Wire Wire Line
-	2200 6350 2100 6350
+	2300 6350 2100 6350
 Connection ~ 2100 6350
 Wire Wire Line
-	1900 5600 1900 6450
+	2100 6350 2100 6450
 Wire Wire Line
-	2100 6350 2100 7350
+	2300 6850 1450 6850
 Wire Wire Line
-	2200 6450 1900 6450
-Connection ~ 2200 6450
-Connection ~ 1900 6450
+	2550 4650 2550 4850
 Wire Wire Line
-	1900 6450 1900 7650
+	2450 4850 2550 4850
+Wire Wire Line
+	2450 4750 2800 4750
+Wire Wire Line
+	2300 6550 1900 6550
+Connection ~ 1900 6550
+Wire Wire Line
+	1900 6550 1900 6650
+Wire Wire Line
+	2300 6650 1900 6650
+Connection ~ 1900 6650
+Wire Wire Line
+	1900 6650 1900 7650
+Wire Wire Line
+	1900 5600 1900 6550
+Wire Wire Line
+	2300 6450 2100 6450
+Connection ~ 2100 6450
+Wire Wire Line
+	2100 6450 2100 7350
+Wire Wire Line
+	2300 7150 1600 7150
+Wire Wire Line
+	2300 7250 1600 7250
+Text Label 1600 5850 0    50   ~ 0
+FAN6
+Wire Wire Line
+	2300 5850 1600 5850
+Text Label 1450 5950 0    50   ~ 0
+LED_Drive
+Wire Wire Line
+	1450 5950 1450 6850
+Wire Wire Line
+	2300 5750 1600 5750
+Text Label 1600 5750 0    50   ~ 0
+FAN2
+Wire Wire Line
+	1450 5950 2300 5950
+Wire Wire Line
+	2000 7750 2000 5550
+Wire Wire Line
+	2550 1650 2300 1650
 $EndSCHEMATC
