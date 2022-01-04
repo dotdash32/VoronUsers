@@ -17,7 +17,7 @@ Text Notes 800  800  0    150  ~ 30
 Inputs
 Wire Wire Line
 	550  1450 850  1450
-Text Label 1650 1750 2    50   ~ 0
+Text Label 550  1450 0    50   ~ 0
 FAN2
 Wire Wire Line
 	850  1550 550  1550
@@ -760,13 +760,13 @@ Wire Wire Line
 	1350 1650 1650 1650
 Wire Wire Line
 	1350 1750 1650 1750
-Text Label 550  1450 0    50   ~ 0
-PASS0
 Text Label 550  1550 0    50   ~ 0
-PASS1
+PASS0
 Text Label 550  1650 0    50   ~ 0
-PASS2
+PASS1
 Text Label 550  1750 0    50   ~ 0
+PASS2
+Text Label 1650 1750 2    50   ~ 0
 PASS3
 Text Notes 2100 700  0    100  ~ 0
 Fuses

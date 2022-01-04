@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/Users/Josh/Documents/3D_Printing/VoronUsers/printer_mods/Dotdash32/SKR_E3_Mini_V2_Expanders/FanExpander-Lite/FanExpander-Lite.sch</source>
+    <date>Tuesday, January 04, 2022 at 09:30:19 AM</date>
+    <tool>Eeschema (5.1.10-1-10_14)</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>SKR E3 Mini Fan Expander Lite</title>
+        <company>Voron Design</company>
+        <rev>V0.1.1</rev>
+        <date>2021-12-18</date>
+        <source>FanExpander-Lite.sch</source>
+        <comment number="1" value="Drawn by Dotdash32 (JDeW)"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="J6">
+      <value>FAN1_IN</value>
+      <footprint>Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61C0DEDC</tstamp>
+    </comp>
+    <comp ref="F1">
+      <value>Polyfuse-2A</value>
+      <footprint>Fuse:Fuse_Bourns_MF-RHT200</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Polyfuse" description="resettable fuse, polymeric positive temperature coefficient (PPTC)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61C26288</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>FAN1</value>
+      <footprint>Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61C7EF42</tstamp>
+    </comp>
+    <comp ref="JP1">
+      <value>V_SELECT1</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Jumper" part="Jumper_3_Open" description="Jumper, 3-pole, both open"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61C814B1</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>560R</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_US" description="Resistor US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61C92F81</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>IRLML6344</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Q_NMOS_GSD" description="Transistor N-MOSFETwith substrate diode (general)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61CE7B49</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>FAN2</value>
+      <footprint>Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61CF5CB7</tstamp>
+    </comp>
+    <comp ref="JP2">
+      <value>V_SELECT2</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Jumper" part="Jumper_3_Open" description="Jumper, 3-pole, both open"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61CF5CBD</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>560R</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_US" description="Resistor US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61CF5CD5</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="LED generic"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61CF5CDB</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>100R</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_US" description="Resistor US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61D23E6E</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="LED generic"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61C95144</tstamp>
+    </comp>
+    <comp ref="Q2">
+      <value>IRLML6344</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Q_NMOS_GSD" description="Transistor N-MOSFETwith substrate diode (general)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61DAD54D</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>FAN3</value>
+      <footprint>Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61DAD553</tstamp>
+    </comp>
+    <comp ref="JP3">
+      <value>V_SELECT3</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Jumper" part="Jumper_3_Open" description="Jumper, 3-pole, both open"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61DAD559</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="LED generic"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61DAD575</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>100R</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_US" description="Resistor US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61DAD584</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>100k</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_US" description="Resistor US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61DAD58A</tstamp>
+    </comp>
+    <comp ref="Q3">
+      <value>IRLML6344</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Q_NMOS_GSD" description="Transistor N-MOSFETwith substrate diode (general)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61DF6C65</tstamp>
+    </comp>
+    <comp ref="J4">
+      <value>FAN4</value>
+      <footprint>Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61DF6C6B</tstamp>
+    </comp>
+    <comp ref="JP4">
+      <value>V_SELECT4</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Jumper" part="Jumper_3_Open" description="Jumper, 3-pole, both open"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61DF6C71</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>560R</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_US" description="Resistor US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61DF6C87</tstamp>
+    </comp>
+    <comp ref="D4">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="LED generic"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61DF6C8D</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>100R</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_US" description="Resistor US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61DF6C9C</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>100k</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_US" description="Resistor US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61DF6CA2</tstamp>
+    </comp>
+    <comp ref="F2">
+      <value>Polyfuse-2A</value>
+      <footprint>Fuse:Fuse_Bourns_MF-RHT200</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Polyfuse" description="resettable fuse, polymeric positive temperature coefficient (PPTC)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61C255C6</tstamp>
+    </comp>
+    <comp ref="J5">
+      <value>EXP1_IN</value>
+      <footprint>Connectors_Multicomp:Multicomp_MC9A12-1034_2x05x2.54mm_Straight</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_02x05_Odd_Even" description="Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61BFB492</tstamp>
+    </comp>
+    <comp ref="JP5">
+      <value>LED_ENABLE</value>
+      <footprint>Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Jumper" part="SolderJumper_2_Bridged" description="Solder Jumper, 2-pole, closed/bridged"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6239146B</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>100k</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_US" description="Resistor US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61D251AF</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>560R</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_US" description="Resistor US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61DAD56F</tstamp>
+    </comp>
+    <comp ref="J7">
+      <value>IO_PassThrough</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_2x04_Pitch2.54mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_02x04_Odd_Even" description="Generic connector, double row, 02x04, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>62877243</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector_Generic" part="Conn_01x02">
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_02x04_Odd_Even">
+      <description>Generic connector, double row, 02x04, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_2x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_02x04_Odd_Even</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_02x05_Odd_Even">
+      <description>Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_2x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_02x05_Odd_Even</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+        <pin num="10" name="Pin_10" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED">
+      <description>LED generic</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Polyfuse">
+      <description>resettable fuse, polymeric positive temperature coefficient (PPTC)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>*polyfuse*</fp>
+        <fp>*PTC*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">F</field>
+        <field name="Value">Polyfuse</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Q_NMOS_GSD">
+      <description>Transistor N-MOSFETwith substrate diode (general)</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">Q_NMOS_GSD</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_US">
+      <description>Resistor US symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_US</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Jumper" part="Jumper_3_Open">
+      <description>Jumper, 3-pole, both open</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Jumper*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">JP</field>
+        <field name="Value">Jumper_3_Open</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="C" type="input"/>
+        <pin num="3" name="B" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Jumper" part="SolderJumper_2_Bridged">
+      <description>Solder Jumper, 2-pole, closed/bridged</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>SolderJumper*Bridged*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">JP</field>
+        <field name="Value">SolderJumper_2_Bridged</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector_Generic">
+      <uri>/Library/Application Support/kicad/library/Connector_Generic.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>/Library/Application Support/kicad/library/Device.lib</uri>
+    </library>
+    <library logical="Jumper">
+      <uri>/Library/Application Support/kicad/library/Jumper.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/FAN2">
+      <node ref="R4" pin="1"/>
+      <node ref="J5" pin="1"/>
+      <node ref="R3" pin="2"/>
+    </net>
+    <net code="2" name="/PASS0">
+      <node ref="J5" pin="3"/>
+      <node ref="J7" pin="2"/>
+    </net>
+    <net code="3" name="/PASS1">
+      <node ref="J5" pin="5"/>
+      <node ref="J7" pin="4"/>
+    </net>
+    <net code="4" name="+5V">
+      <node ref="JP5" pin="1"/>
+      <node ref="JP2" pin="1"/>
+      <node ref="F2" pin="1"/>
+      <node ref="JP4" pin="1"/>
+      <node ref="JP3" pin="1"/>
+      <node ref="JP1" pin="1"/>
+    </net>
+    <net code="5" name="GND">
+      <node ref="J7" pin="5"/>
+      <node ref="Q3" pin="2"/>
+      <node ref="Q2" pin="2"/>
+      <node ref="R4" pin="2"/>
+      <node ref="Q1" pin="2"/>
+      <node ref="J5" pin="9"/>
+      <node ref="J7" pin="1"/>
+      <node ref="R7" pin="1"/>
+      <node ref="J7" pin="3"/>
+      <node ref="R10" pin="1"/>
+      <node ref="J7" pin="7"/>
+    </net>
+    <net code="6" name="/24V_unFused">
+      <node ref="F1" pin="1"/>
+      <node ref="J6" pin="1"/>
+    </net>
+    <net code="7" name="/FAN1_Drive">
+      <node ref="J1" pin="2"/>
+      <node ref="D1" pin="1"/>
+      <node ref="J6" pin="2"/>
+    </net>
+    <net code="8" name="/5V_unFused">
+      <node ref="J5" pin="10"/>
+      <node ref="F2" pin="2"/>
+    </net>
+    <net code="9" name="+24V">
+      <node ref="JP3" pin="3"/>
+      <node ref="F1" pin="2"/>
+      <node ref="JP2" pin="3"/>
+      <node ref="JP1" pin="3"/>
+      <node ref="JP4" pin="3"/>
+    </net>
+    <net code="10" name="Net-(D2-Pad2)">
+      <node ref="D2" pin="2"/>
+      <node ref="R2" pin="1"/>
+    </net>
+    <net code="11" name="Net-(Q1-Pad1)">
+      <node ref="R3" pin="1"/>
+      <node ref="Q1" pin="1"/>
+    </net>
+    <net code="12" name="Net-(D1-Pad2)">
+      <node ref="D1" pin="2"/>
+      <node ref="R1" pin="1"/>
+    </net>
+    <net code="13" name="/FAN2_Drive">
+      <node ref="J2" pin="2"/>
+      <node ref="Q1" pin="3"/>
+      <node ref="D2" pin="1"/>
+    </net>
+    <net code="14" name="Net-(D3-Pad2)">
+      <node ref="D3" pin="2"/>
+      <node ref="R5" pin="1"/>
+    </net>
+    <net code="15" name="Net-(Q2-Pad1)">
+      <node ref="Q2" pin="1"/>
+      <node ref="R6" pin="1"/>
+    </net>
+    <net code="16" name="/FAN3_Drive">
+      <node ref="Q2" pin="3"/>
+      <node ref="J3" pin="2"/>
+      <node ref="D3" pin="1"/>
+    </net>
+    <net code="17" name="Net-(D4-Pad2)">
+      <node ref="D4" pin="2"/>
+      <node ref="R8" pin="1"/>
+    </net>
+    <net code="18" name="Net-(Q3-Pad1)">
+      <node ref="Q3" pin="1"/>
+      <node ref="R9" pin="1"/>
+    </net>
+    <net code="19" name="/FAN4_Drive">
+      <node ref="Q3" pin="3"/>
+      <node ref="D4" pin="1"/>
+      <node ref="J4" pin="2"/>
+    </net>
+    <net code="20" name="/F1V">
+      <node ref="JP1" pin="2"/>
+      <node ref="J1" pin="1"/>
+    </net>
+    <net code="21" name="/F2V">
+      <node ref="JP2" pin="2"/>
+      <node ref="J2" pin="1"/>
+    </net>
+    <net code="22" name="/F3V">
+      <node ref="JP3" pin="2"/>
+      <node ref="J3" pin="1"/>
+    </net>
+    <net code="23" name="/F4V">
+      <node ref="J4" pin="1"/>
+      <node ref="JP4" pin="2"/>
+    </net>
+    <net code="24" name="/FAN4">
+      <node ref="R9" pin="2"/>
+      <node ref="R10" pin="2"/>
+      <node ref="J5" pin="2"/>
+    </net>
+    <net code="25" name="Net-(J5-Pad4)">
+      <node ref="J5" pin="4"/>
+    </net>
+    <net code="26" name="/FAN3">
+      <node ref="R6" pin="2"/>
+      <node ref="R7" pin="2"/>
+      <node ref="J5" pin="6"/>
+    </net>
+    <net code="27" name="/PASS2">
+      <node ref="J5" pin="7"/>
+      <node ref="J7" pin="6"/>
+    </net>
+    <net code="28" name="/PASS3">
+      <node ref="J7" pin="8"/>
+      <node ref="J5" pin="8"/>
+    </net>
+    <net code="29" name="/LED_Drive">
+      <node ref="R8" pin="2"/>
+      <node ref="R2" pin="2"/>
+      <node ref="JP5" pin="2"/>
+      <node ref="R1" pin="2"/>
+      <node ref="R5" pin="2"/>
+    </net>
+  </nets>
+</export>
