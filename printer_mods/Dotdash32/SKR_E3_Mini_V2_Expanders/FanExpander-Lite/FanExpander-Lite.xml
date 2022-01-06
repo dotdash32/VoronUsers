@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/Users/Josh/Documents/3D_Printing/VoronUsers/printer_mods/Dotdash32/SKR_E3_Mini_V2_Expanders/FanExpander-Lite/FanExpander-Lite.sch</source>
-    <date>Tuesday, January 04, 2022 at 09:30:19 AM</date>
+    <date>Wednesday, January 05, 2022 at 10:35:22 AM</date>
     <tool>Eeschema (5.1.10-1-10_14)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -20,7 +20,7 @@
   </design>
   <components>
     <comp ref="J6">
-      <value>FAN1_IN</value>
+      <value>JST-XH2</value>
       <footprint>Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
@@ -28,7 +28,7 @@
       <tstamp>61C0DEDC</tstamp>
     </comp>
     <comp ref="F1">
-      <value>Polyfuse-2A</value>
+      <value>MF-RHT200/32</value>
       <footprint>Fuse:Fuse_Bourns_MF-RHT200</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="Polyfuse" description="resettable fuse, polymeric positive temperature coefficient (PPTC)"/>
@@ -36,7 +36,7 @@
       <tstamp>61C26288</tstamp>
     </comp>
     <comp ref="J1">
-      <value>FAN1</value>
+      <value>JST-XH2</value>
       <footprint>Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
@@ -44,7 +44,7 @@
       <tstamp>61C7EF42</tstamp>
     </comp>
     <comp ref="JP1">
-      <value>V_SELECT1</value>
+      <value>V_SELECT</value>
       <footprint>Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Jumper" part="Jumper_3_Open" description="Jumper, 3-pole, both open"/>
@@ -68,7 +68,7 @@
       <tstamp>61CE7B49</tstamp>
     </comp>
     <comp ref="J2">
-      <value>FAN2</value>
+      <value>JST-XH2</value>
       <footprint>Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
@@ -76,7 +76,7 @@
       <tstamp>61CF5CB7</tstamp>
     </comp>
     <comp ref="JP2">
-      <value>V_SELECT2</value>
+      <value>V_SELECT</value>
       <footprint>Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Jumper" part="Jumper_3_Open" description="Jumper, 3-pole, both open"/>
@@ -124,7 +124,7 @@
       <tstamp>61DAD54D</tstamp>
     </comp>
     <comp ref="J3">
-      <value>FAN3</value>
+      <value>JST-XH2</value>
       <footprint>Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
@@ -132,7 +132,7 @@
       <tstamp>61DAD553</tstamp>
     </comp>
     <comp ref="JP3">
-      <value>V_SELECT3</value>
+      <value>V_SELECT</value>
       <footprint>Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Jumper" part="Jumper_3_Open" description="Jumper, 3-pole, both open"/>
@@ -172,7 +172,7 @@
       <tstamp>61DF6C65</tstamp>
     </comp>
     <comp ref="J4">
-      <value>FAN4</value>
+      <value>JST-XH2</value>
       <footprint>Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
@@ -180,7 +180,7 @@
       <tstamp>61DF6C6B</tstamp>
     </comp>
     <comp ref="JP4">
-      <value>V_SELECT4</value>
+      <value>V_SELECT</value>
       <footprint>Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Jumper" part="Jumper_3_Open" description="Jumper, 3-pole, both open"/>
@@ -220,7 +220,7 @@
       <tstamp>61DF6CA2</tstamp>
     </comp>
     <comp ref="F2">
-      <value>Polyfuse-2A</value>
+      <value>MF-RHT200/32</value>
       <footprint>Fuse:Fuse_Bourns_MF-RHT200</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="Polyfuse" description="resettable fuse, polymeric positive temperature coefficient (PPTC)"/>
