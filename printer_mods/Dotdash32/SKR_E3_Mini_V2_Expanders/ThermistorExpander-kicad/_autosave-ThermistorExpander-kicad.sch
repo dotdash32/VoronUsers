@@ -203,7 +203,7 @@ L Connector_Generic:Conn_02x04_Odd_Even J1
 U 1 1 61BB4B9B
 P 2250 1950
 F 0 "J1" H 2300 2267 50  0000 C CNN
-F 1 "SPI1_breakaway" H 2300 2176 50  0000 C CNN
+F 1 "SPI_Header" H 2300 2176 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_2x04_Pitch2.54mm" H 2250 1950 50  0001 C CNN
 F 3 "~" H 2250 1950 50  0001 C CNN
 	1    2250 1950
@@ -226,6 +226,4 @@ Wire Wire Line
 	2850 2150 2950 2150
 NoConn ~ 2050 2150
 NoConn ~ 2050 1850
-NoConn ~ 3350 2850
-NoConn ~ 4400 3750
 $EndSCHEMATC

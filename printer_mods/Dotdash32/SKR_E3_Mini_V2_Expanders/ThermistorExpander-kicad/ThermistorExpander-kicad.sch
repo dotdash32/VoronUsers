@@ -1,14 +1,14 @@
 EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr A 11000 8500
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
+Title "SPI Thermistor Expander"
+Date "2022-01-08"
+Rev "1.0.1"
+Comp "Voron Design"
+Comment1 "Designed by Dotdash32 (JDeW)"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -27,7 +27,7 @@ F 3 "" H 2950 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2550 2150 2950 2150
+	2550 2150 2850 2150
 Wire Wire Line
 	2950 2150 2950 2300
 Wire Wire Line
@@ -43,7 +43,7 @@ L Connector_Generic:Conn_01x02 J2
 U 1 1 61A0FD6D
 P 4750 1600
 F 0 "J2" H 4830 1592 50  0000 L CNN
-F 1 "Conn_01x02" H 4830 1501 50  0000 L CNN
+F 1 "JST-XH2" H 4830 1501 50  0000 L CNN
 F 2 "Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight" H 4750 1600 50  0001 C CNN
 F 3 "~" H 4750 1600 50  0001 C CNN
 	1    4750 1600
@@ -54,7 +54,7 @@ L Connector_Generic:Conn_01x02 J3
 U 1 1 61A1120B
 P 4750 2000
 F 0 "J3" H 4830 1992 50  0000 L CNN
-F 1 "Conn_01x02" H 4830 1901 50  0000 L CNN
+F 1 "JST-XH2" H 4830 1901 50  0000 L CNN
 F 2 "Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight" H 4750 2000 50  0001 C CNN
 F 3 "~" H 4750 2000 50  0001 C CNN
 	1    4750 2000
@@ -65,7 +65,7 @@ L Connector_Generic:Conn_01x02 J4
 U 1 1 61A11821
 P 4750 2400
 F 0 "J4" H 4830 2392 50  0000 L CNN
-F 1 "Conn_01x02" H 4830 2301 50  0000 L CNN
+F 1 "JST-XH2" H 4830 2301 50  0000 L CNN
 F 2 "Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight" H 4750 2400 50  0001 C CNN
 F 3 "~" H 4750 2400 50  0001 C CNN
 	1    4750 2400
@@ -123,31 +123,27 @@ Text Notes 1800 3200 0    50   ~ 0
 $Comp
 L Jumper:Jumper_3_Open JP1
 U 1 1 61B9AB20
-P 2300 1350
-F 0 "JP1" H 2300 1481 50  0000 C CNN
-F 1 "Jumper_3_Open" H 2300 1572 50  0000 C CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm" H 2300 1350 50  0001 C CNN
-F 3 "~" H 2300 1350 50  0001 C CNN
-	1    2300 1350
+P 2300 1250
+F 0 "JP1" H 2300 1381 50  0000 C CNN
+F 1 "V2-3_SEL" H 2300 1472 50  0000 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm" H 2300 1250 50  0001 C CNN
+F 3 "~" H 2300 1250 50  0001 C CNN
+	1    2300 1250
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	2050 1950 1650 1950
 Wire Wire Line
-	1650 1950 1650 1350
-Wire Wire Line
-	1650 1350 2050 1350
+	1650 1250 2050 1250
 Wire Wire Line
 	2550 1950 3000 1950
 Wire Wire Line
-	3000 1950 3000 1350
+	3000 1250 2550 1250
 Wire Wire Line
-	3000 1350 2550 1350
+	2300 1100 2300 1050
 Wire Wire Line
-	2300 1200 2300 1150
-Wire Wire Line
-	2300 1150 2500 1150
-Text Label 2500 1150 2    50   ~ 0
+	2300 1050 2500 1050
+Text Label 2500 1050 2    50   ~ 0
 TH4
 $Comp
 L Device:C C1
@@ -203,18 +199,31 @@ Connection ~ 4200 2700
 Wire Wire Line
 	4200 2700 4300 2700
 $Comp
-L Connector_Generic:Conn_02x03_Odd_Even J1
+L Connector_Generic:Conn_02x04_Odd_Even J1
 U 1 1 61BB4B9B
-P 2250 2050
-F 0 "J1" H 2300 2367 50  0000 C CNN
-F 1 "Conn_02x03_Odd_Even" H 2300 2276 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" H 2250 2050 50  0001 C CNN
-F 3 "~" H 2250 2050 50  0001 C CNN
-	1    2250 2050
+P 2250 1950
+F 0 "J1" H 2300 2267 50  0000 C CNN
+F 1 "SPI1_breakaway" H 2300 2176 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x04_Pitch2.54mm" H 2250 1950 50  0001 C CNN
+F 3 "~" H 2250 1950 50  0001 C CNN
+	1    2250 1950
 	1    0    0    -1  
 $EndComp
 Text Label 1650 1750 1    50   ~ 0
 V2.0
 Text Label 3000 1750 1    50   ~ 0
 V3.0
+Wire Wire Line
+	1650 1250 1650 1950
+Wire Wire Line
+	3000 1250 3000 1950
+Wire Wire Line
+	2550 1850 2850 1850
+Wire Wire Line
+	2850 1850 2850 2150
+Connection ~ 2850 2150
+Wire Wire Line
+	2850 2150 2950 2150
+NoConn ~ 2050 2150
+NoConn ~ 2050 1850
 $EndSCHEMATC
