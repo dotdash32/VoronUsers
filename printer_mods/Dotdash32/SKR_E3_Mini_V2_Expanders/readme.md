@@ -22,8 +22,16 @@ Uses SPI1 interface to add up to 3 thermistors.
 
 Be aware, they use 10k pull ups (next to SD-card on SKR board), which are different than the typical 4.7k pull ups.  This changes the thermistor sensitivity, so be aware they might not be as sensitive at printing temperatures.  This is based on Timmit's Umbilical mod, and the thermistor ports are designed for chamber and other low temperature and non-sensitive applications.
 
-Uses entirely THT components for easier hand soldering.  The one pseudo exception is the TH4 switch, which handles switching between pins on the SKR Mini E3 V2 and V3. But that just needs a simple solder bridge.  
+The TH4 Solder jumper switches the SPI pins that have been rearranged (V2.0 versus V3.0), and this solder jumper allows either SKR Mini E3 board to support 3 thermistors. All the pins are rearranged, so please see software configuration/schematic PDF for the correct pins for your board.
 
-The TH4 Solder jumper/switch is because the SPI pins have been rearranged (V2.0 versus V3.0), and this solder jumper allows either SKR Mini E3 board to support 3 thermistors. All the pins are rearranged, so please see software configuration/schematic PDF for the correct pins for your board.
+Requires 3 1206 SMD capacitors on the reverse side, but is otherwise THT.  The 1206 capacitors are easier to source (chip shortage, whoo), but are large enough to be relatively easy to hand solder.
 
 ![isometric](images/TH_EXP_topIso.png)
+
+## Bill of Materials
+
+The BOM is shared between all sub-boards to make bulk ordering easier.
+
+See the [Google Sheet](https://docs.google.com/spreadsheets/d/1q3EhH6Y6PAZSyFnE2HCBAoWyKbX_h1eaZGjsf7-CNqc/edit?usp=sharing).
+
+Coming soon: interactive ordering tool, enter how many of each board you want components for, and it'll generate a total LCSC list.
