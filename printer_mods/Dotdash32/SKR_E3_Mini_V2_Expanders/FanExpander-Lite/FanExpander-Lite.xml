@@ -2,14 +2,14 @@
 <export version="D">
   <design>
     <source>/Users/Josh/Documents/3D_Printing/VoronUsers/printer_mods/Dotdash32/SKR_E3_Mini_V2_Expanders/FanExpander-Lite/FanExpander-Lite.sch</source>
-    <date>Wednesday, January 05, 2022 at 10:35:22 AM</date>
+    <date>Monday, January 10, 2022 at 10:20:11 AM</date>
     <tool>Eeschema (5.1.10-1-10_14)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>SKR E3 Mini Fan Expander Lite</title>
         <company>Voron Design</company>
-        <rev>V0.1.1</rev>
-        <date>2021-12-18</date>
+        <rev>V1.0.2</rev>
+        <date>2022-01-10</date>
         <source>FanExpander-Lite.sch</source>
         <comment number="1" value="Drawn by Dotdash32 (JDeW)"/>
         <comment number="2" value=""/>
@@ -267,6 +267,30 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>62877243</tstamp>
     </comp>
+    <comp ref="FID1">
+      <value>Fiducial</value>
+      <footprint>Fiducials:Fiducial_0.5mm_Dia_1mm_Outer</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61DD8A6E</tstamp>
+    </comp>
+    <comp ref="FID2">
+      <value>Fiducial</value>
+      <footprint>Fiducials:Fiducial_0.5mm_Dia_1mm_Outer</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61DDDD44</tstamp>
+    </comp>
+    <comp ref="FID3">
+      <value>Fiducial</value>
+      <footprint>Fiducials:Fiducial_0.5mm_Dia_1mm_Outer</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61DE12C9</tstamp>
+    </comp>
   </components>
   <libparts>
     <libpart lib="Connector_Generic" part="Conn_01x02">
@@ -420,6 +444,17 @@
         <pin num="2" name="B" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="Mechanical" part="MountingHole">
+      <description>Mounting Hole without connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">MH</field>
+        <field name="Value">MountingHole</field>
+      </fields>
+    </libpart>
   </libparts>
   <libraries>
     <library logical="Connector_Generic">
@@ -430,6 +465,9 @@
     </library>
     <library logical="Jumper">
       <uri>/Library/Application Support/kicad/library/Jumper.lib</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>/Library/Application Support/kicad/library/Mechanical.lib</uri>
     </library>
   </libraries>
   <nets>

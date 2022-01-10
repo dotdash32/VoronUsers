@@ -5,8 +5,8 @@ $Descr A 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "SKR E3 Mini Fan Expander Lite"
-Date "2022-01-05"
-Rev "V1.0.1"
+Date "2022-01-10"
+Rev "V1.0.2"
 Comp "Voron Design"
 Comment1 "Drawn by Dotdash32 (JDeW)"
 Comment2 ""
@@ -795,8 +795,6 @@ LED Enable
 Text Notes 2150 2350 0    50   ~ 0
 Cut this trace to disable LED\nfrom turning on when their\ncorresponding MOSFET turns on.
 Wire Notes Line
-	2000 2450 3500 2450
-Wire Notes Line
 	3500 500  3500 2450
 $Comp
 L Connector_Generic:Conn_02x04_Odd_Even J7
@@ -861,4 +859,41 @@ Text Notes 3800 1800 0    50   ~ 0
 Unused I/O’s exposed on header for \ngeneric use, i.e. with buttons
 Wire Notes Line
 	3500 1900 5500 1900
+$Comp
+L Mechanical:MountingHole FID1
+U 1 1 61DD8A6E
+P 3650 2250
+F 0 "FID1" H 3750 2296 50  0000 L CNN
+F 1 "Fiducial" H 3750 2205 50  0000 L CNN
+F 2 "Fiducials:Fiducial_0.5mm_Dia_1mm_Outer" H 3650 2250 50  0001 C CNN
+F 3 "~" H 3650 2250 50  0001 C CNN
+	1    3650 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole FID2
+U 1 1 61DDDD44
+P 4250 2250
+F 0 "FID2" H 4350 2296 50  0000 L CNN
+F 1 "Fiducial" H 4350 2205 50  0000 L CNN
+F 2 "Fiducials:Fiducial_0.5mm_Dia_1mm_Outer" H 4250 2250 50  0001 C CNN
+F 3 "~" H 4250 2250 50  0001 C CNN
+	1    4250 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole FID3
+U 1 1 61DE12C9
+P 4850 2250
+F 0 "FID3" H 4950 2296 50  0000 L CNN
+F 1 "Fiducial" H 4950 2205 50  0000 L CNN
+F 2 "Fiducials:Fiducial_0.5mm_Dia_1mm_Outer" H 4850 2250 50  0001 C CNN
+F 3 "~" H 4850 2250 50  0001 C CNN
+	1    4850 2250
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	2000 2450 5500 2450
+Text Notes 3600 2100 0    100  ~ 0
+Fiducials
 $EndSCHEMATC
