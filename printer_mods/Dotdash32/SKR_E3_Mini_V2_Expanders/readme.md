@@ -36,4 +36,6 @@ The BOM is shared between all sub-boards to make bulk ordering easier.
 
 See the [Google Sheet](https://docs.google.com/spreadsheets/d/1q3EhH6Y6PAZSyFnE2HCBAoWyKbX_h1eaZGjsf7-CNqc/edit?usp=sharing).
 
+Each sub-project also has a csv file of it's specific BOM ready for import to LCSC.  In each, JST-crimp connectors are also included, but can be excluded (since the larger wire gauge ones are sometimes difficult to source).  This saves some cost, but it's relatively small in the grand scheme of things.
+
 Coming soon: interactive ordering tool, enter how many of each board you want components for, and it'll generate a total LCSC list.
