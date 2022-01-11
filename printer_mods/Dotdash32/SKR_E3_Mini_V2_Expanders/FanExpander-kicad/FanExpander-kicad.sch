@@ -1451,8 +1451,6 @@ Wire Notes Line width 12 style solid
 	3000 5250 500  5250
 Wire Notes Line width 12 style solid
 	3000 500  3000 5250
-Wire Notes Line
-	3000 5250 6850 5250
 Text Label 1950 2700 2    50   ~ 0
 5V_EXP
 Wire Wire Line
@@ -1636,4 +1634,43 @@ Wire Notes Line
 	3000 5250 3000 6400
 Wire Notes Line
 	3000 6400 500  6400
+$Comp
+L Mechanical:MountingHole FID1
+U 1 1 62078A04
+P 7100 4700
+F 0 "FID1" H 7200 4746 50  0000 L CNN
+F 1 "Fiducial" H 7200 4655 50  0000 L CNN
+F 2 "Fiducials:Fiducial_0.5mm_Dia_1mm_Outer" H 7100 4700 50  0001 C CNN
+F 3 "~" H 7100 4700 50  0001 C CNN
+	1    7100 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole FID2
+U 1 1 62080AE9
+P 7100 4900
+F 0 "FID2" H 7200 4946 50  0000 L CNN
+F 1 "Fiducial" H 7200 4855 50  0000 L CNN
+F 2 "Fiducials:Fiducial_0.5mm_Dia_1mm_Outer" H 7100 4900 50  0001 C CNN
+F 3 "~" H 7100 4900 50  0001 C CNN
+	1    7100 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole FID3
+U 1 1 6208B033
+P 7100 5100
+F 0 "FID3" H 7200 5146 50  0000 L CNN
+F 1 "Fiducial" H 7200 5055 50  0000 L CNN
+F 2 "Fiducials:Fiducial_0.5mm_Dia_1mm_Outer" H 7100 5100 50  0001 C CNN
+F 3 "~" H 7100 5100 50  0001 C CNN
+	1    7100 5100
+	1    0    0    -1  
+$EndComp
+Text Notes 6900 4500 0    100  ~ 0
+Fiducials
+Wire Notes Line
+	7800 5250 7800 4300
+Wire Notes Line
+	3000 5250 7800 5250
 $EndSCHEMATC
