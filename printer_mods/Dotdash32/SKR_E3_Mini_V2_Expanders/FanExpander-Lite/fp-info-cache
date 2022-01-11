@@ -1,4 +1,4 @@
-604706817304853
+606351253711853
 Air_Coils_SML_NEOSID
 Neosid_Air-Coil_SML_1turn_HDM0131A
 
@@ -27191,6 +27191,13 @@ LED_SMD
 LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm
 LED SMD 1206 (3216 Metric), reverse mount, square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
 diode reverse
+0
+2
+2
+LED_SMD
+LED_1206_3216Metric_ReverseMount_Hole2.1x2.1mm
+
+
 0
 2
 2
