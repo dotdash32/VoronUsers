@@ -17,7 +17,7 @@ Text Notes 1300 800  0    150  ~ 30
 Inputs
 Wire Wire Line
 	550  1450 850  1450
-Text Label 550  1650 0    50   ~ 0
+Text Label 550  1450 0    50   ~ 0
 FAN1
 Wire Wire Line
 	850  1550 550  1550
@@ -29,13 +29,13 @@ Wire Wire Line
 	1350 1450 1650 1450
 Wire Wire Line
 	1350 1650 1650 1650
-Text Label 550  1550 0    50   ~ 0
-FAN2
-Text Label 550  1750 0    50   ~ 0
-FAN3
-Text Label 550  1450 0    50   ~ 0
-FAN4
 Text Label 1650 1650 2    50   ~ 0
+FAN2
+Text Label 1650 1450 2    50   ~ 0
+FAN3
+Text Label 550  1650 0    50   ~ 0
+FAN4
+Text Label 550  1550 0    50   ~ 0
 FAN5
 $Comp
 L power:GND #PWR0102
@@ -487,7 +487,7 @@ Wire Wire Line
 	1350 1750 1900 1750
 Wire Wire Line
 	1350 1550 1900 1550
-Text Label 1650 1450 2    50   ~ 0
+Text Label 550  1750 0    50   ~ 0
 FAN6
 Text Label 2550 1650 2    50   ~ 0
 FAN7
