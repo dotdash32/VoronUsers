@@ -5,8 +5,8 @@ $Descr A 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "SKR Fan Expander"
-Date "2022-01-11"
-Rev "V0.1.4"
+Date "2022-01-14"
+Rev "V0.1.5"
 Comp "Voron Design"
 Comment1 "Drawn by Dotdash32 (JDeW)"
 Comment2 ""
