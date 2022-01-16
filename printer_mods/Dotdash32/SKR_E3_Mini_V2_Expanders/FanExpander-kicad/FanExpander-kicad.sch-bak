@@ -5,8 +5,8 @@ $Descr A 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "SKR Fan Expander"
-Date "2022-01-11"
-Rev "V0.1.4"
+Date "2022-01-14"
+Rev "V0.1.5"
 Comp "Voron Design"
 Comment1 "Drawn by Dotdash32 (JDeW)"
 Comment2 ""
@@ -508,7 +508,7 @@ U 1 1 6239146B
 P 3650 4950
 F 0 "JP9" H 3650 5155 50  0000 C CNN
 F 1 "LED_ENABLE" H 3650 5064 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 3650 4950 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Pasted_RoundedPad1.0x1.5mm" H 3650 4950 50  0001 C CNN
 F 3 "~" H 3650 4950 50  0001 C CNN
 	1    3650 4950
 	1    0    0    -1  
@@ -1434,9 +1434,9 @@ Wire Wire Line
 	5850 4650 5850 4850
 Connection ~ 5850 4850
 Wire Notes Line
-	4900 900  4900 5250
+	4900 900  4900 5350
 Wire Notes Line
-	6850 900  6850 5250
+	6850 1050 6850 5350
 Text Notes 4950 4500 0    100  ~ 0
 Mounting Holes
 Text Notes 1850 2600 0    50   ~ 0
@@ -1448,9 +1448,9 @@ Wire Notes Line width 12 style solid
 Wire Notes Line
 	3000 4300 500  4300
 Wire Notes Line width 12 style solid
-	3000 5250 500  5250
+	3000 5350 500  5350
 Wire Notes Line width 12 style solid
-	3000 500  3000 5250
+	3000 500  3000 5350
 Text Label 1950 2700 2    50   ~ 0
 5V_EXP
 Wire Wire Line
@@ -1492,7 +1492,7 @@ U 1 1 61D42FDA
 P 1600 2850
 F 0 "JP8" V 1554 2918 50  0000 L CNN
 F 1 "5V_EXP_CONN" V 1645 2918 50  0000 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 1600 2850 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Pasted_RoundedPad1.0x1.5mm" H 1600 2850 50  0001 C CNN
 F 3 "~" H 1600 2850 50  0001 C CNN
 	1    1600 2850
 	0    1    1    0   
@@ -1544,7 +1544,7 @@ U 1 1 61D688A0
 P 4500 1850
 F 0 "JP12" H 4500 2055 50  0000 C CNN
 F 1 "FAN0_CTRL" H 4500 1964 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm" H 4500 1850 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4500 1850 50  0001 C CNN
 F 3 "~" H 4500 1850 50  0001 C CNN
 	1    4500 1850
 	1    0    0    -1  
@@ -1580,38 +1580,34 @@ Connection ~ 4250 1600
 $Comp
 L Connector_Generic:Conn_01x03 J12
 U 1 1 61F3F4E8
-P 1800 4850
-F 0 "J12" H 1718 4525 50  0000 C CNN
-F 1 "HI_PWR2" H 1718 4616 50  0000 C CNN
-F 2 "TerminalBlock_Pheonix:TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal" H 1800 4850 50  0001 C CNN
-F 3 "~" H 1800 4850 50  0001 C CNN
-	1    1800 4850
+P 1250 4900
+F 0 "J12" H 1168 4575 50  0000 C CNN
+F 1 "HI_PWR2" H 1168 4666 50  0000 C CNN
+F 2 "TerminalBlock_Pheonix:TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal" H 1250 4900 50  0001 C CNN
+F 3 "~" H 1250 4900 50  0001 C CNN
+	1    1250 4900
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR0108
 U 1 1 61FA64D9
-P 2050 5000
-F 0 "#PWR0108" H 2050 4750 50  0001 C CNN
-F 1 "GND" H 2055 4827 50  0000 C CNN
-F 2 "" H 2050 5000 50  0001 C CNN
-F 3 "" H 2050 5000 50  0001 C CNN
-	1    2050 5000
+P 1500 5050
+F 0 "#PWR0108" H 1500 4800 50  0001 C CNN
+F 1 "GND" H 1505 4877 50  0000 C CNN
+F 2 "" H 1500 5050 50  0001 C CNN
+F 3 "" H 1500 5050 50  0001 C CNN
+	1    1500 5050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2000 4850 2050 4850
-Wire Wire Line
-	2000 4950 2600 4950
-Wire Wire Line
-	2000 4750 2600 4750
-Text Label 2600 4750 2    50   ~ 0
+	1450 4900 1500 4900
+Text Label 2900 4700 2    50   ~ 0
 5V_unFused
-Text Label 2600 4950 2    50   ~ 0
+Text Label 2900 5050 2    50   ~ 0
 24V_unFused
 Wire Wire Line
-	2050 5000 2050 4850
-Text Notes 550  6300 0    50   ~ 0
+	1500 5050 1500 4900
+Text Notes 550  6400 0    50   ~ 0
 Power should be supplied to only \n1 (ONE) input per voltage level.\n\n5V comes from EXP, 5V header, or 5V Screw Terminal.\n  If using 5V Header/Screw Terminal and EXP1, cut JP8.\n  If using Screw Terminal, do not connect 5V Header\n\n24V comes from Fan0 In or 24V Screw Terminal\n  If using Screw Terminal, cut JP11\n  JP12 can be closed to make Fan0 Always On
 $Comp
 L Jumper:SolderJumper_2_Bridged JP11
@@ -1619,7 +1615,7 @@ U 1 1 62096DA4
 P 1400 4150
 F 0 "JP11" H 1350 4350 50  0000 L CNN
 F 1 "Fan0_PWR" H 1250 4250 50  0000 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 1400 4150 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Pasted_RoundedPad1.0x1.5mm" H 1400 4150 50  0001 C CNN
 F 3 "~" H 1400 4150 50  0001 C CNN
 	1    1400 4150
 	1    0    0    -1  
@@ -1628,12 +1624,12 @@ Wire Wire Line
 	1550 4150 2200 4150
 Text Label 900  4150 0    50   ~ 0
 24V_F0
-Text Notes 550  5450 0    100  ~ 0
+Text Notes 550  5550 0    100  ~ 0
 Notes on Power Input
 Wire Notes Line
-	3000 5250 3000 6400
+	3000 5250 3000 6500
 Wire Notes Line
-	3000 6400 500  6400
+	3000 6500 500  6500
 $Comp
 L Mechanical:MountingHole FID1
 U 1 1 62078A04
@@ -1670,7 +1666,49 @@ $EndComp
 Text Notes 6900 4500 0    100  ~ 0
 Fiducials
 Wire Notes Line
-	7800 5250 7800 4300
+	7800 5350 7800 4300
 Wire Notes Line
-	3000 5250 7800 5250
+	3000 5350 7800 5350
+$Comp
+L Jumper:SolderJumper_2_Open JP13
+U 1 1 61EEFF27
+P 2250 4700
+F 0 "JP13" H 2250 4905 50  0000 C CNN
+F 1 "5V_Term" H 2250 4814 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2250 4700 50  0001 C CNN
+F 3 "~" H 2250 4700 50  0001 C CNN
+	1    2250 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP14
+U 1 1 61EF10E8
+P 2250 5050
+F 0 "JP14" H 2250 5255 50  0000 C CNN
+F 1 "24V_Term" H 2250 5164 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2250 5050 50  0001 C CNN
+F 3 "~" H 2250 5050 50  0001 C CNN
+	1    2250 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 4700 2400 4700
+Wire Wire Line
+	1450 5000 1700 5000
+Wire Wire Line
+	1700 5000 1700 5050
+Wire Wire Line
+	1700 5050 2100 5050
+Wire Wire Line
+	1450 4800 1700 4800
+Wire Wire Line
+	1700 4800 1700 4700
+Wire Wire Line
+	1700 4700 2100 4700
+Wire Wire Line
+	2400 5050 2900 5050
+Text Label 1700 4700 0    50   ~ 0
+5V_Screw
+Text Label 1700 5050 0    50   ~ 0
+24v_Screw
 $EndSCHEMATC
