@@ -5,8 +5,8 @@ $Descr A 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "SKR E3 Mini Fan Expander Lite"
-Date "2022-01-10"
-Rev "V1.0.3"
+Date "2022-01-16"
+Rev "V1.0.4"
 Comp "Voron Design"
 Comment1 "Drawn by Dotdash32 (JDeW)"
 Comment2 ""
@@ -620,7 +620,7 @@ U 1 1 6239146B
 P 2600 2000
 F 0 "JP5" H 2600 2205 50  0000 C CNN
 F 1 "LED_ENABLE" H 2600 2114 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 2600 2000 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Pasted_RoundedPad1.0x1.5mm" H 2600 2000 50  0001 C CNN
 F 3 "~" H 2600 2000 50  0001 C CNN
 	1    2600 2000
 	1    0    0    -1  

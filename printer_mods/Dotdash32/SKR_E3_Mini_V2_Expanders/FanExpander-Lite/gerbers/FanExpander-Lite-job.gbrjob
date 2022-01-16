@@ -7,7 +7,7 @@
       "Application": "Pcbnew",
       "Version":     "(5.1.10-1-10_14)"
     },
-    "CreationDate":  "2022-01-11T15:19:51-08:00"
+    "CreationDate":  "2022-01-16T00:09:14-08:00"
   },
   "GeneralSpecs":
   {
@@ -15,7 +15,7 @@
     {
       "Name": "FanExpander-Lite",
       "GUID": "46616e45-7870-4616-9e64-65722d4c6974",
-      "Revision": "V1.0.3"
+      "Revision": "V1.0.4"
     },
     "Size":
     {
