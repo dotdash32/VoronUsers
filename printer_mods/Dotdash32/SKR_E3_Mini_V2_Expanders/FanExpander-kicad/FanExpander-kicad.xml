@@ -2,14 +2,14 @@
 <export version="D">
   <design>
     <source>/Users/Josh/Documents/3D_Printing/VoronUsers/printer_mods/Dotdash32/SKR_E3_Mini_V2_Expanders/FanExpander-kicad/FanExpander-kicad.sch</source>
-    <date>Tuesday, January 11, 2022 at 03:32:34 PM</date>
+    <date>Sunday, January 16, 2022 at 12:11:46 AM</date>
     <tool>Eeschema (5.1.10-1-10_14)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>SKR Fan Expander</title>
         <company>Voron Design</company>
-        <rev>V0.1.3</rev>
-        <date>2022-01-01</date>
+        <rev>V1.0.1</rev>
+        <date>2022-01-16</date>
         <source>FanExpander-kicad.sch</source>
         <comment number="1" value="Drawn by Dotdash32 (JDeW)"/>
         <comment number="2" value=""/>
@@ -189,7 +189,7 @@
     </comp>
     <comp ref="JP9">
       <value>LED_ENABLE</value>
-      <footprint>Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm</footprint>
+      <footprint>Jumper:SolderJumper-2_P1.3mm_Pasted_RoundedPad1.0x1.5mm</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Jumper" part="SolderJumper_2_Bridged" description="Solder Jumper, 2-pole, closed/bridged"/>
       <sheetpath names="/" tstamps="/"/>
@@ -501,7 +501,7 @@
     </comp>
     <comp ref="JP8">
       <value>5V_EXP_CONN</value>
-      <footprint>Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm</footprint>
+      <footprint>Jumper:SolderJumper-2_P1.3mm_Pasted_RoundedPad1.0x1.5mm</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Jumper" part="SolderJumper_2_Bridged" description="Solder Jumper, 2-pole, closed/bridged"/>
       <sheetpath names="/" tstamps="/"/>
@@ -525,7 +525,7 @@
     </comp>
     <comp ref="JP12">
       <value>FAN0_CTRL</value>
-      <footprint>Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm</footprint>
+      <footprint>Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
       <sheetpath names="/" tstamps="/"/>
@@ -541,7 +541,7 @@
     </comp>
     <comp ref="JP11">
       <value>Fan0_PWR</value>
-      <footprint>Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm</footprint>
+      <footprint>Jumper:SolderJumper-2_P1.3mm_Pasted_RoundedPad1.0x1.5mm</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Jumper" part="SolderJumper_2_Bridged" description="Solder Jumper, 2-pole, closed/bridged"/>
       <sheetpath names="/" tstamps="/"/>
@@ -570,6 +570,22 @@
       <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>6208B033</tstamp>
+    </comp>
+    <comp ref="JP13">
+      <value>5V_Term</value>
+      <footprint>Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61EEFF27</tstamp>
+    </comp>
+    <comp ref="JP14">
+      <value>24V_Term</value>
+      <footprint>Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61EF10E8</tstamp>
     </comp>
   </components>
   <libparts>
@@ -790,77 +806,77 @@
     </library>
   </libraries>
   <nets>
-    <net code="1" name="/FAN4">
-      <node ref="R12" pin="2"/>
+    <net code="1" name="/FAN1">
       <node ref="J8" pin="1"/>
-      <node ref="R8" pin="2"/>
-    </net>
-    <net code="2" name="/FAN1">
       <node ref="R5" pin="2"/>
       <node ref="R9" pin="1"/>
+    </net>
+    <net code="2" name="/FAN5">
+      <node ref="R16" pin="2"/>
+      <node ref="R19" pin="2"/>
+      <node ref="J8" pin="3"/>
+    </net>
+    <net code="3" name="/FAN4">
+      <node ref="R8" pin="2"/>
+      <node ref="R12" pin="2"/>
       <node ref="J8" pin="5"/>
     </net>
-    <net code="3" name="/FAN2">
+    <net code="4" name="/FAN6">
+      <node ref="R17" pin="2"/>
+      <node ref="R20" pin="1"/>
+      <node ref="J8" pin="7"/>
+    </net>
+    <net code="5" name="/FAN3">
+      <node ref="J8" pin="2"/>
+      <node ref="R11" pin="2"/>
+      <node ref="R7" pin="2"/>
+    </net>
+    <net code="6" name="/FAN2">
+      <node ref="J8" pin="6"/>
       <node ref="R6" pin="2"/>
-      <node ref="J8" pin="3"/>
       <node ref="R10" pin="1"/>
     </net>
-    <net code="4" name="/FAN3">
-      <node ref="J8" pin="7"/>
-      <node ref="R7" pin="2"/>
-      <node ref="R11" pin="2"/>
-    </net>
-    <net code="5" name="/FAN6">
-      <node ref="R20" pin="1"/>
-      <node ref="R17" pin="2"/>
-      <node ref="J8" pin="2"/>
-    </net>
-    <net code="6" name="/FAN5">
-      <node ref="J8" pin="6"/>
-      <node ref="R19" pin="2"/>
-      <node ref="R16" pin="2"/>
-    </net>
     <net code="7" name="GND">
-      <node ref="R12" pin="1"/>
-      <node ref="R10" pin="2"/>
-      <node ref="Q3" pin="2"/>
-      <node ref="Q5" pin="2"/>
-      <node ref="Q2" pin="2"/>
-      <node ref="JP12" pin="2"/>
-      <node ref="MH1" pin="1"/>
-      <node ref="J12" pin="2"/>
-      <node ref="R19" pin="1"/>
-      <node ref="R9" pin="2"/>
-      <node ref="R20" pin="2"/>
-      <node ref="Q6" pin="2"/>
       <node ref="Q7" pin="2"/>
+      <node ref="Q6" pin="2"/>
+      <node ref="R12" pin="1"/>
+      <node ref="R9" pin="2"/>
       <node ref="R21" pin="2"/>
-      <node ref="Q1" pin="2"/>
-      <node ref="MH2" pin="1"/>
-      <node ref="R11" pin="1"/>
-      <node ref="Q4" pin="2"/>
-      <node ref="J8" pin="9"/>
+      <node ref="R20" pin="2"/>
+      <node ref="Q5" pin="2"/>
       <node ref="J9" pin="1"/>
+      <node ref="Q1" pin="2"/>
+      <node ref="R19" pin="1"/>
+      <node ref="J12" pin="2"/>
+      <node ref="R11" pin="1"/>
+      <node ref="Q3" pin="2"/>
+      <node ref="MH1" pin="1"/>
+      <node ref="MH2" pin="1"/>
+      <node ref="Q4" pin="2"/>
+      <node ref="Q2" pin="2"/>
+      <node ref="J8" pin="9"/>
+      <node ref="JP12" pin="2"/>
+      <node ref="R10" pin="2"/>
     </net>
     <net code="8" name="/5V_EXP">
-      <node ref="JP8" pin="1"/>
       <node ref="J8" pin="10"/>
+      <node ref="JP8" pin="1"/>
     </net>
     <net code="9" name="+5V">
       <node ref="JP3" pin="1"/>
-      <node ref="JP0" pin="1"/>
-      <node ref="JP5" pin="1"/>
       <node ref="JP9" pin="1"/>
-      <node ref="JP1" pin="1"/>
-      <node ref="JP6" pin="1"/>
+      <node ref="JP5" pin="1"/>
+      <node ref="JP2" pin="1"/>
       <node ref="JP4" pin="1"/>
+      <node ref="JP0" pin="1"/>
+      <node ref="JP6" pin="1"/>
+      <node ref="JP1" pin="1"/>
       <node ref="JP7" pin="1"/>
       <node ref="F1" pin="1"/>
-      <node ref="JP2" pin="1"/>
     </net>
     <net code="10" name="Net-(D5-Pad2)">
-      <node ref="D5" pin="2"/>
       <node ref="R3" pin="1"/>
+      <node ref="D5" pin="2"/>
     </net>
     <net code="11" name="Net-(Q3-Pad1)">
       <node ref="R7" pin="1"/>
@@ -868,34 +884,34 @@
     </net>
     <net code="12" name="/FAN3_Dr">
       <node ref="Q3" pin="3"/>
-      <node ref="D5" pin="1"/>
       <node ref="J3" pin="2"/>
+      <node ref="D5" pin="1"/>
     </net>
     <net code="13" name="Net-(D6-Pad2)">
-      <node ref="R4" pin="1"/>
       <node ref="D6" pin="2"/>
+      <node ref="R4" pin="1"/>
     </net>
     <net code="14" name="Net-(Q4-Pad1)">
-      <node ref="R8" pin="1"/>
       <node ref="Q4" pin="1"/>
+      <node ref="R8" pin="1"/>
     </net>
     <net code="15" name="/FAN4_Dr">
+      <node ref="D6" pin="1"/>
       <node ref="Q4" pin="3"/>
       <node ref="J4" pin="2"/>
-      <node ref="D6" pin="1"/>
     </net>
     <net code="16" name="Net-(D7-Pad2)">
-      <node ref="D7" pin="2"/>
       <node ref="R13" pin="1"/>
+      <node ref="D7" pin="2"/>
     </net>
     <net code="17" name="Net-(Q5-Pad1)">
-      <node ref="R16" pin="1"/>
       <node ref="Q5" pin="1"/>
+      <node ref="R16" pin="1"/>
     </net>
     <net code="18" name="/FAN5_Dr">
-      <node ref="Q5" pin="3"/>
       <node ref="J5" pin="2"/>
       <node ref="D7" pin="1"/>
+      <node ref="Q5" pin="3"/>
     </net>
     <net code="19" name="/F3V">
       <node ref="JP3" pin="2"/>
@@ -910,41 +926,41 @@
       <node ref="JP10" pin="3"/>
     </net>
     <net code="22" name="Net-(J8-Pad8)">
-      <node ref="J8" pin="8"/>
       <node ref="JP10" pin="1"/>
+      <node ref="J8" pin="8"/>
     </net>
     <net code="23" name="/FAN7">
-      <node ref="R21" pin="1"/>
       <node ref="R18" pin="2"/>
+      <node ref="R21" pin="1"/>
       <node ref="JP10" pin="2"/>
     </net>
     <net code="24" name="/LED_Drive">
-      <node ref="R3" pin="2"/>
+      <node ref="R4" pin="2"/>
       <node ref="R2" pin="2"/>
       <node ref="JP9" pin="2"/>
-      <node ref="R22" pin="2"/>
       <node ref="R14" pin="2"/>
       <node ref="R1" pin="2"/>
       <node ref="R15" pin="2"/>
       <node ref="R13" pin="2"/>
-      <node ref="R4" pin="2"/>
+      <node ref="R3" pin="2"/>
+      <node ref="R22" pin="2"/>
     </net>
     <net code="25" name="/F5V">
-      <node ref="JP5" pin="2"/>
       <node ref="J5" pin="1"/>
+      <node ref="JP5" pin="2"/>
     </net>
     <net code="26" name="Net-(D1-Pad2)">
       <node ref="R1" pin="1"/>
       <node ref="D1" pin="2"/>
     </net>
     <net code="27" name="Net-(Q1-Pad1)">
-      <node ref="Q1" pin="1"/>
       <node ref="R5" pin="1"/>
+      <node ref="Q1" pin="1"/>
     </net>
     <net code="28" name="/FAN1_Dr">
+      <node ref="Q1" pin="3"/>
       <node ref="D1" pin="1"/>
       <node ref="J1" pin="2"/>
-      <node ref="Q1" pin="3"/>
     </net>
     <net code="29" name="/F1V">
       <node ref="JP1" pin="2"/>
@@ -955,8 +971,8 @@
       <node ref="JP2" pin="2"/>
     </net>
     <net code="31" name="/FAN2_Dr">
-      <node ref="J2" pin="2"/>
       <node ref="Q2" pin="3"/>
+      <node ref="J2" pin="2"/>
       <node ref="D4" pin="1"/>
     </net>
     <net code="32" name="Net-(Q2-Pad1)">
@@ -968,30 +984,30 @@
       <node ref="D4" pin="2"/>
     </net>
     <net code="34" name="/FAN0_Dr">
+      <node ref="J10" pin="2"/>
       <node ref="J0" pin="2"/>
       <node ref="D3" pin="1"/>
-      <node ref="J10" pin="2"/>
       <node ref="JP12" pin="1"/>
     </net>
     <net code="35" name="+24V">
-      <node ref="F2" pin="1"/>
-      <node ref="JP0" pin="3"/>
+      <node ref="JP5" pin="3"/>
       <node ref="JP4" pin="3"/>
       <node ref="JP1" pin="3"/>
-      <node ref="JP6" pin="3"/>
-      <node ref="JP5" pin="3"/>
       <node ref="JP3" pin="3"/>
-      <node ref="JP2" pin="3"/>
       <node ref="JP7" pin="3"/>
+      <node ref="F2" pin="1"/>
+      <node ref="JP0" pin="3"/>
+      <node ref="JP6" pin="3"/>
+      <node ref="JP2" pin="3"/>
     </net>
     <net code="36" name="/F6V">
       <node ref="JP6" pin="2"/>
       <node ref="J6" pin="1"/>
     </net>
     <net code="37" name="/FAN6_Dr">
-      <node ref="J6" pin="2"/>
       <node ref="Q6" pin="3"/>
       <node ref="D8" pin="1"/>
+      <node ref="J6" pin="2"/>
     </net>
     <net code="38" name="Net-(Q6-Pad1)">
       <node ref="Q6" pin="1"/>
@@ -1002,21 +1018,21 @@
       <node ref="R14" pin="1"/>
     </net>
     <net code="40" name="Net-(D2-Pad2)">
-      <node ref="R15" pin="1"/>
       <node ref="D2" pin="2"/>
+      <node ref="R15" pin="1"/>
     </net>
     <net code="41" name="Net-(Q7-Pad1)">
-      <node ref="R18" pin="1"/>
       <node ref="Q7" pin="1"/>
+      <node ref="R18" pin="1"/>
     </net>
     <net code="42" name="/FAN7_Dr">
       <node ref="J7" pin="2"/>
-      <node ref="Q7" pin="3"/>
       <node ref="D2" pin="1"/>
+      <node ref="Q7" pin="3"/>
     </net>
     <net code="43" name="/F7V">
-      <node ref="J7" pin="1"/>
       <node ref="JP7" pin="2"/>
+      <node ref="J7" pin="1"/>
     </net>
     <net code="44" name="Net-(D3-Pad2)">
       <node ref="R22" pin="1"/>
@@ -1030,14 +1046,22 @@
       <node ref="F1" pin="2"/>
       <node ref="JP8" pin="2"/>
       <node ref="J9" pin="2"/>
-      <node ref="J12" pin="3"/>
+      <node ref="JP13" pin="2"/>
     </net>
-    <net code="47" name="/24V_unFused">
-      <node ref="F2" pin="2"/>
+    <net code="47" name="/24v_Screw">
       <node ref="J12" pin="1"/>
-      <node ref="JP11" pin="2"/>
+      <node ref="JP14" pin="1"/>
     </net>
-    <net code="48" name="/24V_F0">
+    <net code="48" name="/5V_Screw">
+      <node ref="J12" pin="3"/>
+      <node ref="JP13" pin="1"/>
+    </net>
+    <net code="49" name="/24V_unFused">
+      <node ref="JP11" pin="2"/>
+      <node ref="JP14" pin="2"/>
+      <node ref="F2" pin="2"/>
+    </net>
+    <net code="50" name="/24V_F0">
       <node ref="J10" pin="1"/>
       <node ref="JP11" pin="1"/>
     </net>
