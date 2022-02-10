@@ -40,7 +40,7 @@ Because EXP1 and EXP2 have slightly different pinouts, Fan7 can be driven from t
 
 ## Fan Expander Lite V1
 
-First run of Fan Expander Lites (V1.0.3).  See Errata for details on errors.
+First run of Fan Expander Lites (V1.0.4).  See Errata for details on errors.
 
 ### Voltage Input - Static
 
